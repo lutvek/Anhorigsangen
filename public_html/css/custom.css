@@ -1,0 +1,61 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar_item {
+    border-bottom: 1px solid;
+    padding-top: 30px;
+    padding-bottom:30px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav>li>a{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+#navbar_items {
+    
+}
+
+#navbar {
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+#trapezoid_navbar {
+    height: 0;
+    margin-bottom: 0px;
+    margin-left: -2500px;
+    padding-left: 2500px;
+    padding-right: 100px;
+    border-bottom: 112px solid #1f7294;
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+#logo_navbar{
+    height: 75px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
