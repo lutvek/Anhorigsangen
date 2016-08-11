@@ -3,27 +3,71 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/*
 .navbar_item {
-    border-bottom: 1px solid;
-    padding-top: 30px;
-    padding-bottom:30px;
+    padding-top: 0px;
+    padding-bottom:0px;
     padding-left: 0px;
     padding-right: 0px;
 }
+*/
+.navbar-toggle {
+    background-color: #ffffff;
+    margin-top: 40px;
+    border-color: red;
+}
+.nav>li>a {
+        font-size: 18px;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin-left: 10px; 
+        margin-right: 10px;
+        color: #414141;  
+    }
 
-.nav>li>a{
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 10px; 
-    margin-right: 10px;
+@media (min-width: 768px) {
+    .nav>li>a {
+        padding-bottom:35px;
+        padding-top:35px;
+        font-size: 13px;
+    }
+}
+@media (min-width: 992px) {
+    .nav>li>a {
+        padding-bottom:40px;
+        padding-top:40px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav>li>a {
+        padding-bottom:45px;
+        padding-top: 45px;
+        font-size: 18px;
+    }
 }
 
-#navbar_items {
-    
+.nav>li>a:hover,
+.nav>li>a:active
+{
+    color: #1f7294;
+    background-color: #ffffff;
+    -webkit-box-shadow:inset 0px -2px 0px 0px #1f7294;
+    -moz-box-shadow:inset 0px -2px 0px 0px #1f7294;
+    box-shadow:inset 0px -2px 0px 0px #1f7294;
+    /*
+    border-bottom: solid 2px #1f7294;
+    padding-bottom: 43px;
+    */
+}
+.nav>li>a:visited,
+.nav>li>a:focus{
+    outline:none;
+    background-color: #ffffff;
+    border: none;
 }
 
-#navbar {
+#custom_navbar {
     border: 0px;
     margin-bottom: 0px;
 }
@@ -34,14 +78,52 @@
     margin-left: -2500px;
     padding-left: 2500px;
     padding-right: 100px;
-    border-bottom: 112px solid #1f7294;
+    border-bottom: 111px solid #1f7294;
     border-left: 0px solid transparent;
     border-right: 25px solid transparent;
 }
 
-#logo_navbar{
+@media (min-width: 768px) {
+    #trapezoid_navbar {
+        border-bottom: 90px solid #1f7294;
+        padding-right: 50px;
+    }
+}
+@media (min-width: 992px) {
+    #trapezoid_navbar {
+        border-bottom: 100px solid #1f7294;
+        padding-right: 90px;
+    }
+}
+@media (min-width: 1200px) {
+    #trapezoid_navbar {
+        border-bottom: 111px solid #1f7294;
+        padding-right: 100px;
+    }
+}
+
+#logo_navbar {
     height: 75px;
     margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    #logo_navbar {
+        height: 55px;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 992px) {
+    #logo_navbar {
+        height: 65px;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    #logo_navbar {
+        height: 75px;
+        margin-top: 20px;
+    }
 }
 
 
