@@ -13,8 +13,8 @@
 */
 .navbar-toggle {
     background-color: #ffffff;
-    margin-top: 40px;
-    border-color: red;
+    margin-top: 28px;
+    border-color: #414141;
 }
 .nav>li>a {
         font-size: 18px;
@@ -36,13 +36,13 @@
     .nav>li>a {
         padding-bottom:40px;
         padding-top:40px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (min-width: 1200px) {
     .nav>li>a {
-        padding-bottom:45px;
-        padding-top: 45px;
+        padding-bottom:46px;
+        padding-top: 46px;
         font-size: 18px;
     }
 }
@@ -77,15 +77,15 @@
     margin-bottom: 0px;
     margin-left: -2500px;
     padding-left: 2500px;
-    padding-right: 100px;
-    border-bottom: 111px solid #1f7294;
+    border-bottom: 90.5px solid #1f7294;
+    padding-right: 50px;
     border-left: 0px solid transparent;
     border-right: 25px solid transparent;
 }
 
 @media (min-width: 768px) {
     #trapezoid_navbar {
-        border-bottom: 90px solid #1f7294;
+        border-bottom: 90.5px solid #1f7294;
         padding-right: 50px;
     }
 }
@@ -97,13 +97,13 @@
 }
 @media (min-width: 1200px) {
     #trapezoid_navbar {
-        border-bottom: 111px solid #1f7294;
+        border-bottom: 112.5px solid #1f7294;
         padding-right: 100px;
     }
 }
 
 #logo_navbar {
-    height: 75px;
+    height: 55px;
     margin-top: 20px;
 }
 
@@ -126,7 +126,9 @@
     }
 }
 
-
+.icon-bar {
+    background-color: #414141;
+}
 
 
 
