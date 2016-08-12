@@ -24,6 +24,8 @@
             
         </style>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -72,48 +74,67 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <div class="row">
+              <div class="col-md-5">
+                  <h1 id="jumborubrik">
+                      ANHÖRIGSÄNGEN SESAM
+                  </h1>
+                  <h2 id="jumbotext">
+                      <strong>SÄNGSKÅP</strong> PÅ HJUL FÖR <strong>SJUKHUS</strong> OCH VÅRDMILJÖER MED HÖGA KRAV PÅ 
+                      <strong>HYGIEN</strong> OCH <strong>PATIENTSÄKERHET</strong>
+                  </h2>
+              </div>
+          </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <p id="anhorigtext">
+                "När patienten kan ha sina anhöriga hos sig hjälper det patienten att tillfriskna snabbare på flera plan. 
+                En skön anhörigsäng möjliggör både övernattning och längre besök under dagen vilket i sin tur ger en bättre vård."
+            </p>
+            <p class="brodtext">
+                Anhörigsängen Sesam är framtagen i samarbete med NKS för deras enpatientsrum och uppfyller högt ställda krav på 
+                material, hygien och hållfasthet. Anhörigsängen Sesam är robust och lämpar sig för intensivt användande samtidigt
+                som den tar liten plats i rummet. [tål sprit, intensiv användning] Bädden är mycket bekväm och lätt att flytta 
+                mellan rum, vilket gör att Sesam även lämpar sig för exempelvis äldreboenden eller förskolor.
+            </p>
         </div>
           <div class="col-md-6">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <img id="anhorig1" src="img/anhorig1.jpg">
         </div>
       </div>
       <!-- Example row of columns -->
-      <div class="row">
+      <div id="circle_row" class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="circle">
+                <p class="circle_text">
+                    SÄKER
+                </p>
+            </div>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="circle">
+                <p class="circle_text">
+                    FLEXIBEL
+                </p>
+            </div>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="circle">
+                <p class="circle_text">
+                    BEKVÄM
+                </p>
+            </div>
         </div>
       </div>
 
       <hr>
 
-      <footer>
-        <p>&copy; Company 2015</p>
+      <footer id="footer">
+        <p id="footer_text">&copy; Anhörigsängen Sverige AB 2016</p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>

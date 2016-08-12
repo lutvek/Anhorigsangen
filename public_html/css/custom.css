@@ -3,14 +3,31 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*
-.navbar_item {
-    padding-top: 0px;
-    padding-bottom:0px;
-    padding-left: 0px;
-    padding-right: 0px;
+
+
+
+.bg {
+  
+  position: fixed;
+  top:10px;
+  left:0;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  z-index: -1;
 }
-*/
+
+.brodtext{
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.jumbotron {
+    background: url('../img/baddad_sang.JPG') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
 .navbar-toggle {
     background-color: #ffffff;
     margin-top: 28px;
@@ -67,9 +84,58 @@
     border: none;
 }
 
+
+
+.circle {
+    margin: 0 auto;
+    height: 290px;
+    line-height: 290px;
+    text-align: center;
+    width: 290px;
+    background-color:#1f7294;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.circle_text {
+    color:#ffffff;
+    font-size: 20px;
+}
+
+#circle_row {
+    margin-top: 100px;
+}
+
+#jumborubrik{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: 
+}
+
+#jumbotext {
+    color: #ffffff;
+    padding-right: 30px;
+    font-size: 25px;
+}
+
+#anhorigtext{
+    text-align: center;
+    font-size: 18px;
+    font-style: Italic;
+    margin-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+#anhorig1 {
+    width: 100%;
+    border-radius: 6px;
+}
+
 #custom_navbar {
     border: 0px;
     margin-bottom: 0px;
+    background-color: #ffffff;  
 }
 
 #trapezoid_navbar {
@@ -130,7 +196,14 @@
     background-color: #414141;
 }
 
+#footer {
+    color: #c8c8c8;
+    text-align: center;
+}
 
+#footer_text {
+    
+}
 
 
 
