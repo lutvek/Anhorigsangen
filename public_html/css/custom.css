@@ -69,9 +69,9 @@
 {
     color: #1f7294;
     background-color: #ffffff;
-    -webkit-box-shadow:inset 0px -2px 0px 0px #1f7294;
-    -moz-box-shadow:inset 0px -2px 0px 0px #1f7294;
-    box-shadow:inset 0px -2px 0px 0px #1f7294;
+    -webkit-box-shadow:inset 0px -3px 0px 0px #1f7294;
+    -moz-box-shadow:inset 0px -3px 0px 0px #1f7294;
+    box-shadow:inset 0px -3px 0px 0px #1f7294;
     /*
     border-bottom: solid 2px #1f7294;
     padding-bottom: 43px;
@@ -101,6 +101,13 @@
 .circle_text {
     color:#ffffff;
     font-size: 20px;
+}
+
+.circle_description {
+    text-align: center;
+    padding-top: 30px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
 #circle_row {
@@ -141,12 +148,24 @@
 #trapezoid_navbar {
     height: 0;
     margin-bottom: 0px;
-    margin-left: -2500px;
-    padding-left: 2500px;
+    margin-left: -3500px;
+    padding-left: 3500px;
     border-bottom: 90.5px solid #1f7294;
     padding-right: 50px;
     border-left: 0px solid transparent;
     border-right: 25px solid transparent;
+}
+
+#trapezoid_background {
+    position:absolute;
+    height: 0;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    margin-left: 60%;
+    padding-right: 3000px;
+    border-bottom: 470px solid #1f7294;
+    border-left: 80px solid transparent;
+    border-right: 0px solid transparent;
 }
 
 @media (min-width: 768px) {
