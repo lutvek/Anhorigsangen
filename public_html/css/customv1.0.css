@@ -20,11 +20,10 @@
     text-align: justify;
     padding-left: 0px;
     padding-right: 30px;
-    margin-bottom: 30px;
     font-weight:300;
 }
 .jumbotron {
-    background: url('../img/bild_sova.jpg') no-repeat center center;
+    background: url('../img/baddad_sang.JPG') no-repeat center center;
     background-size: cover;
     margin-bottom: 50px;
 }
@@ -86,44 +85,37 @@
     border: none;
 }
 
-.square {
+.circle {
+    margin: 0 auto;
     margin-top: 50px;
     height: 290px;
     line-height: 290px;
     text-align: center;
     width: 290px;
     background-color:#1f7294;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
 }
 
-.square_text {
+
+.circle_text {
     color:#ffffff;
     font-size: 20px;
 }
 
-.square_description {
+.circle_description {
     font-weight: 300;
-    width: 290px;
+    margin: 0 auto;
+    max-width: 350px;
     text-align: center;
     padding-top: 30px;
+    padding-left:30px;
+    padding-right:30px;
 }
 
-#square_row{
-    margin-top: 30px;
-}
-
-#square_and_text_left {
-    width:270px;
-    margin:auto;
-}
-
-#square_and_text_center {
-    width:270px;
-    margin:auto;
-}
-
-#square_and_text_right {
-    width:270px;
-    margin:auto;
+#circle_row{
+    margin-top: 50px;
 }
 #jumborubrik {
     color: #ffffff;
@@ -144,32 +136,46 @@
     float:left;
 }
 
-#varfor_anhorigsangen {
-  margin-top: 50px;
-}
 #anhorigtext{
+    text-align: center;
     font-size: 16px;
     font-style: Italic;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
     padding-left: 0px;
     padding-right: 30px;
     padding-top:16px;
-    color:#1f7294;
 }
-#circle_pircure {
-    background: url('../img/anhorig1.JPG') no-repeat center center;
-    height: 480px;
-    width: 480px;
-    margin:auto;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+#anhorig1 {
+    width: 100%;
+    border-radius: 6px;
 }
 
 #custom_navbar {
     border: 0px;
     margin-bottom: 0px;
     background-color: #ffffff;  
+}
+
+#trapezoid_navbar {
+    height: 0;
+    margin-bottom: 0px;
+    margin-left: -3500px;
+    padding-left: 3500px;
+    border-bottom: 90.5px solid #1f7294;
+    padding-right: 50px;
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+#trapezoid_background {
+    position:absolute;
+    right:0%;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    padding-right: 36%;
+    border-bottom: 470px solid #1f7294;
+    border-left: 80px solid transparent;
+    border-right: 0px solid transparent;
 }
 
 @media (min-width: 768px) {
@@ -223,29 +229,9 @@
     color: #c8c8c8;
     text-align: center;
 }
-#hr_text {
-    margin-top:30px;
-}
-#sesam_innan_hr {
-    padding-top:9px;
-    color: #1f7294;
-    font-size: 18px;
-}
 
-#hr_efter_sesam {
-    border: 1px solid #1f7294;
-}
-
-#rubrik_sesam {
-    color: #1f7294;
-    font-size:24px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-#las_mer {
-    font-style: italic;
-    font-size:16px;
+#footer_text {
+    
 }
 
 
