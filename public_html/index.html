@@ -2,186 +2,239 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!--[if gt IE 8]><!--> <!--<html class="no-js" lang="">--> <!--<![endif]-->
+<html lang='sv'>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-        
-        <style>
-            body {
-                font-family: 'Work Sans', sans-serif;
-                color: #414141;
-            }
-            
-        </style>
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-        
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav id="custom_navbar" class="navbar navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#">
-            <img src="img/logo.png" id="logo_navbar">
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul id ="navbar_items" class="nav navbar-nav navbar-right">
-                <li class="navbar_item">
-                    <a class="navbar_item_link" href=#>
-                        Hem
-                    </a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_item_link" href=#>
-                        Anhörigsängen Sesam
-                    </a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_item_link" href=#>
-                        Priser och Beställning
-                    </a>
-                </li>
-                <li class="navbar_item">
-                    <a class="navbar_item_link" href=#>
-                        Kontakt
-                    </a>
-                </li>
-            </ul>
-        </div><!--/.navbar-collapse -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Anhörigsängen AB</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="js/vendor/vue.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+-->
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav id="custom_navbar" class="navbar navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#">
+          <img src="img/logo.png" id="logo_navbar">
+        </a>
       </div>
-    </nav>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-5">
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul id ="navbar_items" class="nav navbar-nav navbar-right">
+          <li class="navbar_item">
+            <a class="navbar_item_link" href=# v-on:click="makeActive('home')">
+              Hem
+            </a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_item_link" href=# v-on:click="makeActive('sesam')">
+              Anhörigsängen Sesam
+            </a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_item_link" href=# v-on:click="makeActive('priser')">
+              Priser och Beställning
+            </a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_item_link" href=# v-on:click="makeActive('kontakt')">
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+
+
+  <!-- Sida: Hem -->
+  <div v-show="active == 'home'">
+    <!-- Carousel -->
+    <div id="jumboCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#jumboCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#jumboCarousel" data-slide-to="1"></li>
+        <li data-target="#jumboCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide 1 -->
+        <div class="item active">
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
                   <h2 id="jumbotext">
-                      <strong>SÄNGSKÅP</strong> PÅ HJUL FÖR <strong>SJUKHUS</strong> OCH VÅRDMILJÖER MED HÖGA KRAV PÅ 
-                      <strong>HYGIEN</strong> OCH <strong>PATIENTSÄKERHET</strong>
+                    <strong>SÄNGSKÅP</strong> PÅ HJUL FÖR <strong>SJUKHUS</strong> OCH VÅRDMILJÖER MED HÖGA KRAV PÅ
+                    <strong>HYGIEN</strong> OCH <strong>PATIENTSÄKERHET</strong>
                   </h2>
                   <hr id="jumboline">
+                </div>
               </div>
+            </div>
           </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="item">
+          <!-- Jumbotron -->
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <h2 id="jumbotext">
+                    <strong>SÄNGSKÅP</strong> PÅ HJUL FÖR <strong>SJUKHUS</strong> OCH VÅRDMILJÖER MED HÖGA KRAV PÅ
+                    <strong>HYGIEN</strong> OCH <strong>PATIENTSÄKERHET</strong>
+                  </h2>
+                  <hr id="jumboline">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="item">
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <h2 id="jumbotext">
+                    <strong>SÄNGSKÅP</strong> PÅ HJUL FÖR <strong>SJUKHUS</strong> OCH VÅRDMILJÖER MED HÖGA KRAV PÅ
+                    <strong>HYGIEN</strong> OCH <strong>PATIENTSÄKERHET</strong>
+                  </h2>
+                  <hr id="jumboline">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-            <div id="varfor_anhorigsangen">
-                <h2 id="rubrik_sesam">
-                    Varför Anhörigsängen Sesam?
-                </h2>
-                <p id="anhorigtext">
-                    När patienten kan ha sina anhöriga hos sig hjälper det patienten att tillfriskna snabbare på flera plan. 
-                    En skön anhörigsäng möjliggör både övernattning och längre besök under dagen vilket i sin tur ger en bättre vård.
-                </p>
-                <p class="brodtext">
-                    Anhörigsängen Sesam är framtagen i samarbete med NKS för deras enpatientsrum och uppfyller högt ställda krav på 
-                    material, hygien och hållfasthet. Anhörigsängen Sesam är robust och lämpar sig för intensivt användande samtidigt
-                    som den tar liten plats i rummet. [tål sprit, intensiv användning] Bädden är mycket bekväm och lätt att flytta 
-                    mellan rum, vilket gör att Sesam även lämpar sig för exempelvis äldreboenden eller förskolor.
-                </p>
-                <a id="las_mer" href="#">Läs mer</a>
-            </div>
-        </div>
-          <div class="col-md-6">
-              <div id="circle_pircure">
-                  
-              </div>
+          <div id="varfor_anhorigsangen">
+            <h2 id="rubrik_sesam">
+              Varför Anhörigsängen Sesam?
+            </h2>
+            <p id="anhorigtext">
+              När patienten kan ha sina anhöriga hos sig hjälper det patienten att tillfriskna snabbare på flera plan.
+              En skön anhörigsäng möjliggör både övernattning och längre besök under dagen vilket i sin tur ger en bättre vård.
+            </p>
+            <p class="brodtext">
+              Anhörigsängen Sesam är framtagen i samarbete med NKS för deras enpatientsrum och uppfyller högt ställda krav på
+              material, hygien och hållfasthet. Anhörigsängen Sesam är robust och lämpar sig för intensivt användande samtidigt
+              som den tar liten plats i rummet. [tål sprit, intensiv användning] Bädden är mycket bekväm och lätt att flytta
+              mellan rum, vilket gör att Sesam även lämpar sig för exempelvis äldreboenden eller förskolor.
+            </p>
+            <a id="las_mer" href="#">Läs mer</a>
           </div>
+        </div>
+        <div class="col-md-6">
+          <div id="circle_pircure">
+          </div>
+        </div>
       </div>
       <div id="hr_text" class='row'>
-          <div class='col-md-3'>
-              <p id="sesam_innan_hr">Anhörigsängen Sesam</p>
-          </div>
-          <div class='col-md-9'>
-              <hr id="hr_efter_sesam">
-          </div>
+        <div class='col-md-3'>
+          <p id="sesam_innan_hr">Anhörigsängen Sesam</p>
+        </div>
+        <div class='col-md-9'>
+          <hr id="hr_efter_sesam">
+        </div>
       </div>
       <div id="square_row" class="row">
         <div class="col-md-4">
-            <div id="square_and_text_left">
-                <div class="square">
-                    <p class="square_text">
-                        Säker
-                    </p>
-                </div>
-                <div class="square_description">
-                    Anhörigsängen Sesam är noggrant utformad med komponenter av högsta kvalitet för att garantera
-                    lång och säker livslängd. Anhörigsängen Sesam uppfyller även hygienkrav nivå 2 vilket innebär att 
-                    hela produkten enkelt kan desinficeras med alkohol.
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div id = square_and_text_center>
-                <div class="square">
-                    <p class="square_text">
-                        Flexibel
-                    </p>
-                </div>
-                <div class="square_description">
-                    Vid förflyttning rullar Anhörigsängen Sesam tyst, mjukt och följsamt utan att lämna märken i golvet.
-                    Anhörigsängen Sesam tar liten plats i rummet och kan styras även i utfällt läge.
-                </div>
-            </div>
-       </div>
-        <div class="col-md-4">
-            <div id="square_and_text_right">
-                <div class="square">
-                <p class="square_text">
-                    Bekväm
-                </p>
+          <div id="square_and_text_left">
+            <div class="square">
+              <p class="square_text">
+                Säker
+              </p>
             </div>
             <div class="square_description">
-                Anhörigsängen Sesam är skön att ligga i och utformad så att anhöriga ska kunna komma nära varandra.
-                In- och utfällning av bädden sker genom logiska och ergonomiska rörelser vilket tillsammans med att
-                produkten uppfyller hygienkrav 2 gör den väldigt lätt att rengöra.
+              Anhörigsängen Sesam är noggrant utformad med komponenter av högsta kvalitet för att garantera
+              lång och säker livslängd. Anhörigsängen Sesam uppfyller även hygienkrav nivå 2 vilket innebär att
+              hela produkten enkelt kan desinficeras med alkohol.
             </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id = square_and_text_center>
+            <div class="square">
+              <p class="square_text">
+                Flexibel
+              </p>
             </div>
+            <div class="square_description">
+              Vid förflyttning rullar Anhörigsängen Sesam tyst, mjukt och följsamt utan att lämna märken i golvet.
+              Anhörigsängen Sesam tar liten plats i rummet och kan styras även i utfällt läge.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="square_and_text_right">
+            <div class="square">
+              <p class="square_text">
+                Bekväm
+              </p>
+            </div>
+            <div class="square_description">
+              Anhörigsängen Sesam är skön att ligga i och utformad så att anhöriga ska kunna komma nära varandra.
+              In- och utfällning av bädden sker genom logiska och ergonomiska rörelser vilket tillsammans med att
+              produkten uppfyller hygienkrav 2 gör den väldigt lätt att rengöra.
+            </div>
+          </div>
         </div>
       </div>
+    </div> <!-- /container -->
+  </div> <!-- /home -->
 
-      <hr>
+  <hr>
 
-      <footer id="footer">
-        <p id="footer_text">&copy; Anhörigsängen Sverige AB 2016</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+  <footer id="footer">
+    <p id="footer_text">&copy; Anhörigsängen Sverige AB 2016</p>
+  </footer>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
 </html>
