@@ -28,7 +28,7 @@ and open the template in the editor.
 
 .garanti_bold {
     font-weight: 400;
-    color: white;
+    color: #fffff;
     display: inline;
 }
 
@@ -36,4 +36,32 @@ and open the template in the editor.
     display: inline;
 }
 
+#sesam1_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 290px;
+}
+
+#sesam_g1303 {
+    color: #1f7294;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.pris_text {
+    display:inline;
+    font-size: 16px;
+    font-weight:300;
+}
+
+.pris_text_bold {
+    font-weight: 500;
+}
+
+.pris_text_blue {
+    color: #1f7294;
+    font-size:18px;
+}
 
