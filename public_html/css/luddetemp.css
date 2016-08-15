@@ -9,4 +9,59 @@ and open the template in the editor.
 */
 
 
+#priser_rubrik1 {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom:20px; 
+}
+
+#generos {
+    margin-bottom: 16px;
+}
+
+.priser_garanti {
+    font-size: 16px !important;
+    color: white;   
+    font-weight: 300;
+}
+
+.garanti_bold {
+    font-weight: 400;
+    color: #fffff;
+    display: inline;
+}
+
+.garanti_light {
+    display: inline;
+}
+
+#sesam1_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 290px;
+}
+
+#sesam_g1303 {
+    color: #1f7294;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.pris_text {
+    display:inline;
+    font-size: 16px;
+    font-weight:300;
+}
+
+.pris_text_bold {
+    font-weight: 500;
+}
+
+.pris_text_blue {
+    color: #1f7294;
+    font-size:18px;
+}
 
