@@ -43,9 +43,17 @@ and open the template in the editor.
     width: 290px;
 }
 
-#sesam_g1303 {
+#sesam2_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 590px;
+}
+
+.sesam_g1303 {
+    display:inline;
     color: #1f7294;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
 }
@@ -77,6 +85,11 @@ and open the template in the editor.
     font-weight: 600;
 }
 
+#exkl_madrass {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1f7294;
+}
 .pris_per_st {
     margin-top: 40px;
 }
@@ -89,6 +102,7 @@ and open the template in the editor.
     font-weight: 300;
     padding: 22px 110px 22px 110px;
     margin-top:15px;
+    margin-bottom: 55px;
 }
 
 .pris_bild {
@@ -103,9 +117,9 @@ and open the template in the editor.
 
 #prisbild1 {
     background: url('../img/anhorig1.JPG') no-repeat center center;
-    margin-top:90px;
+    margin-top:110px;
 }
 
 .gray_jumbo {
-    background-color: #c8c8c8;
+    background-color: #eee;
 }
