@@ -226,13 +226,14 @@ body {
   font-size:16px;
 }
 
-#omSesam1stRow {
+#omSesamBGjumbo1 {
   background-color: #1f7294;
   height: 600px;
-  margin-left: -2500px;
-  padding-left: 2500px;
-  margin-right: -2500px;
-  padding-right: 2500px;
+  padding: 0;
+}
+
+#omSesam1stRow {
+  height: 600px;
 }
 
 #omSesamMeny {
