@@ -19,13 +19,13 @@ $.ajax({
 					url: 'priser.html',
 					type: 'get',
 					success: function(html) {
-						OmSesam = html;
+						Priser = html;
 
 						$.ajax({
 							url: 'kontakt.html',
 							type: 'get',
 							success: function(html) {
-								OmSesam = html;
+								Kontakt = html;
 
 								/* OVANSTÅENDE ÄR TILLFÄLLIGT */
 
@@ -37,16 +37,16 @@ $.ajax({
 									template: Hem
 								});
 
-								var Sesam = Vue.extend({
+								var SesamComp = Vue.extend({
 									template: OmSesam
 								});
 
-								var Priser = Vue.extend({
-									template: 'Sidan: Priser och Beställning'
+								var PriserComp = Vue.extend({
+									template: Priser
 								});
 
-								var Kontakt = Vue.extend({
-									template: 'Sidan: Kontakt'
+								var KontaktComp = Vue.extend({
+									template: Kontakt
 								});
 
 								router.map({
@@ -54,13 +54,13 @@ $.ajax({
 										component: HemComp
 									},
 									'/sesam': {
-										component: Sesam
+										component: SesamComp
 									},
 									'/priser': {
-										component: Priser
+										component: PriserComp
 									},
 									'/kontakt': {
-										component: Kontakt
+										component: KontaktComp
 									}
 								});
 
