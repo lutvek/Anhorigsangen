@@ -290,14 +290,9 @@ body {
   height: 600px;
 }
 
-#navbar {
-  padding-right: 8px;
-}
-
 #logo_navbar {
   height: 55px;
   margin-top: 5px;
-  padding-left: 15px;
 }
 
 @media (min-width: 768px) {
@@ -311,11 +306,6 @@ body {
   #logo_navbar {
     height: 55px;
     margin-top: 20px;
-    padding-left: 40px;
-  }
-
-  #navbar {
-    padding-right: 40px;
   }
 }
 
@@ -330,11 +320,6 @@ body {
   #logo_navbar {
     height: 65px;
     margin-top: 20px;
-    padding-left: 80px;
-  }
-
-  #navbar {
-    padding-right: 80px;
   }
 }
 
@@ -349,10 +334,5 @@ body {
   #logo_navbar {
     height: 75px;
     margin-top: 20px;
-    padding-left: 120px;
-  }
-
-  #navbar {
-    padding-right: 120px;
   }
 }
