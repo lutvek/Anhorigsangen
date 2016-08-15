@@ -66,6 +66,14 @@ $.ajax({
 
 								router.start(App, 'body');
 
+								var Nav = new Vue({
+								  el: '#custom_navbar',
+								  methods: {
+								    slide: function () {
+								      $('#jumboCarousel').carousel("cycle");
+								    }
+								  }
+								});
 								/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
 
 							}

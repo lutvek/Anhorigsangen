@@ -21,12 +21,6 @@ body {
   font-weight:300;
 }
 
-.jumbotron {
-  background: url('../img/bild_sova.jpg') no-repeat center center;
-  background-size: cover;
-  margin-bottom: 50px;
-}
-
 .navbar-toggle {
   background-color: #ffffff;
   margin-top: 15px;
@@ -129,6 +123,7 @@ body {
   width:270px;
   margin:auto;
 }
+
 #jumborubrik {
   color: #ffffff;
   font-size: 36px;
@@ -146,6 +141,24 @@ body {
   width: 20%;
   border:3px solid #ffffff;
   float:left;
+}
+
+#jumbotron1 {
+  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+#jumbotron2 {
+  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+#jumbotron3 {
+  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
 #varfor_anhorigsangen {
@@ -213,13 +226,14 @@ body {
   font-size:16px;
 }
 
+#omSesamBGjumbo1 {
+  background-color: #1f7294;
+  height: 600px;
+  padding: 0;
+}
+
 #omSesam1stRow {
-    background-color: #1f7294;
-    height: 600px;
-    margin-left: -2500px;
-    padding-left: 2500px;
-    margin-right: -2500px;
-    padding-right: 2500px;
+  height: 600px;
 }
 
 #omSesamMeny {
@@ -253,16 +267,7 @@ body {
 }
 
 .omSesamMeny_knapptext {
-  padding-top: 14px;
-}
-
-#anvandning_text {
-  padding-top: 90px;
-  padding-left: 100px;
-  padding-right: 50px;
-  color: black;
-  font-size: 16px;
-  font-weight: 300;
+  padding-top: 12px;
 }
 
 #viewer {
@@ -301,6 +306,35 @@ body {
   background: url('../img/slider_omA6.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
+}
+
+#omSesam2ndRow {
+  margin-top: 150px;
+}
+
+#anvandning_text {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#anvandning_cirkel {
+  margin-top: 40px;
+  background: url('../img/anvandning_circle.jpg') no-repeat center center;
+  height: 480px;
+  width: 480px;
+  margin-left: auto;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+#omSesam3rdRow {
+  margin-top: 150px;
+  background-color: #1f7294;
+  height: 700px;
+  margin-left: -2500px;
+  padding-left: 2500px;
 }
 
 #logo_navbar {
