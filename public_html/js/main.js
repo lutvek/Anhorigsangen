@@ -1,61 +1,78 @@
-var Sending = true;
 var Hem = "";
 var OmSesam = "";
+var Priser = "";
+var Kontakt = "";
 
 $.ajax({
 	url: 'hem.html',
 	type: 'get',
 	success: function(html) {
-	        Hem = html;
+		Hem = html;
 
-					$.ajax({
-						url: 'OmSesam.html',
-						type: 'get',
-						success: function(html) {
-						        OmSesam = html;
+		$.ajax({
+			url: 'omSesam.html',
+			type: 'get',
+			success: function(html) {
+				OmSesam = html;
 
-/* OVANSTÅENDE ÄR TILLFÄLLIGT */
+				$.ajax({
+					url: 'priser.html',
+					type: 'get',
+					success: function(html) {
+						OmSesam = html;
 
-										var App = Vue.extend({});
+						$.ajax({
+							url: 'kontakt.html',
+							type: 'get',
+							success: function(html) {
+								OmSesam = html;
 
-										var router = new VueRouter();
+								/* OVANSTÅENDE ÄR TILLFÄLLIGT */
 
-										var HemComp = Vue.extend({
-										  template: Hem
-										});
+								var App = Vue.extend({});
 
-										var Sesam = Vue.extend({
-										  template: OmSesam
-										});
+								var router = new VueRouter();
 
-										var Priser = Vue.extend({
-										  template: 'Sidan: Priser och Beställning'
-										});
+								var HemComp = Vue.extend({
+									template: Hem
+								});
 
-										var Kontakt = Vue.extend({
-										  template: 'Sidan: Kontakt'
-										});
+								var Sesam = Vue.extend({
+									template: OmSesam
+								});
 
-										router.map({
-										  '/': {
-										    component: HemComp
-										  },
-										  '/sesam': {
-										    component: Sesam
-										  },
-										  '/priser': {
-										    component: Priser
-										  },
-										  '/kontakt': {
-										    component: Kontakt
-										  }
-										});
+								var Priser = Vue.extend({
+									template: 'Sidan: Priser och Beställning'
+								});
 
-										router.start(App, 'body');
+								var Kontakt = Vue.extend({
+									template: 'Sidan: Kontakt'
+								});
 
-/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
+								router.map({
+									'/': {
+										component: HemComp
+									},
+									'/sesam': {
+										component: Sesam
+									},
+									'/priser': {
+										component: Priser
+									},
+									'/kontakt': {
+										component: Kontakt
+									}
+								});
 
-						}
-					});
+								router.start(App, 'body');
+
+								/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
+
+							}
+						});
+					}
+				});
+			}
+		});
 	}
 });
