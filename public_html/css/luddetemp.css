@@ -9,4 +9,31 @@ and open the template in the editor.
 */
 
 
+#priser_rubrik1 {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom:20px; 
+}
+
+#generos {
+    margin-bottom: 16px;
+}
+
+.priser_garanti {
+    font-size: 16px !important;
+    color: white;   
+    font-weight: 300;
+}
+
+.garanti_bold {
+    font-weight: 400;
+    color: white;
+    display: inline;
+}
+
+.garanti_light {
+    display: inline;
+}
+
 
