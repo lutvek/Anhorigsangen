@@ -1,28 +1,61 @@
-var main = new Vue({
-	// A DOM element to mount our view model.
-	el: 'body',
-  // This is the model.
-	// Define properties and give them initial values.
-	data: {
-		active: 'home',
-		title: 'Anhörigsängen AB - Start'
-	},
+var Sending = true;
+var Hem = "";
+var OmSesam = "";
 
-	// Functions we will be using.
-	methods: {
-		makeActive: function(item) {
-			// When a model is changed, the view will be automatically updated.
-			this.active = item;
-			switch (item) {
-				case 'home': this.title = 'Anhörigsängen AB - Start';
-				break;
-				case 'sesam': this.title = 'Anhörigsängen AB - Sesam';
-				break;
-				case 'priser': this.title = 'Anhörigsängen AB - Priser & Beställning';
-				break;
-				case 'kontakt': this.title = 'Anhörigsängen AB - Kontakt';
-			}
-			document.title = this.title;
-		}
+$.ajax({
+	url: 'hem.html',
+	type: 'get',
+	success: function(html) {
+	        Hem = html;
+
+					$.ajax({
+						url: 'OmSesam.html',
+						type: 'get',
+						success: function(html) {
+						        OmSesam = html;
+
+/* OVANSTÅENDE ÄR TILLFÄLLIGT */
+
+										var App = Vue.extend({});
+
+										var router = new VueRouter();
+
+										var HemComp = Vue.extend({
+										  template: Hem
+										});
+
+										var Sesam = Vue.extend({
+										  template: OmSesam
+										});
+
+										var Priser = Vue.extend({
+										  template: 'Sidan: Priser och Beställning'
+										});
+
+										var Kontakt = Vue.extend({
+										  template: 'Sidan: Kontakt'
+										});
+
+										router.map({
+										  '/': {
+										    component: HemComp
+										  },
+										  '/sesam': {
+										    component: Sesam
+										  },
+										  '/priser': {
+										    component: Priser
+										  },
+										  '/kontakt': {
+										    component: Kontakt
+										  }
+										});
+
+										router.start(App, 'body');
+
+/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
+
+						}
+					});
 	}
 });
