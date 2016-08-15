@@ -65,3 +65,47 @@ and open the template in the editor.
     font-size:18px;
 }
 
+.pris_text_stor {
+    font-size: 18px;
+}
+.pris_st {
+    margin-top:30px;
+}
+.pris_text_pris {
+    font-size: 22px;
+    color: #1f7294;
+    font-weight: 600;
+}
+
+.pris_per_st {
+    margin-top: 40px;
+}
+
+.order_button {
+    background-color: #ffffff;
+    border: 1px solid #1f7294;
+    color: #1f7294;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 22px 110px 22px 110px;
+    margin-top:15px;
+}
+
+.pris_bild {
+
+    height: 480px;
+    width: 480px;
+    margin-left: auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+#prisbild1 {
+    background: url('../img/anhorig1.JPG') no-repeat center center;
+    margin-top:90px;
+}
+
+.gray_jumbo {
+    background-color: #c8c8c8;
+}
