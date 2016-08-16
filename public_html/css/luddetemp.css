@@ -40,7 +40,7 @@ and open the template in the editor.
     border-color: #1f7294;
     margin-left: 0;
     text-align: left;
-    width: 290px;
+    width: 340px;
 }
 
 #sesam2_hr {
@@ -50,12 +50,55 @@ and open the template in the editor.
     width: 590px;
 }
 
+#sesam3_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 250px;
+}
+
+#sesam4_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 250px;
+}
+
+#sesam5_hr {
+    border-color: #1f7294;
+    margin-left: 0;
+    text-align: left;
+    width: 250px;
+}
+
+#sesam6_hr {
+    border-color: #ffffff;
+    margin-left: 0;
+    text-align: left;
+    width: 250px;
+}
 .sesam_g1303 {
     display:inline;
     color: #1f7294;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+#bestallning_rubrik {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hr_prislista {
+    border-color: #1f7294;
+}
+
+.prislista_pris {
+    display: inline;
+    float: right;
 }
 
 .pris_text {
@@ -85,7 +128,7 @@ and open the template in the editor.
     font-weight: 600;
 }
 
-#exkl_madrass {
+.pris_text_rubrik {
     font-size: 24px;
     font-weight: 500;
     color: #1f7294;
@@ -94,8 +137,17 @@ and open the template in the editor.
     margin-top: 40px;
 }
 
+.bestallning_text {
+    display:inline;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 16px;
+}
+.bestallning_text_bold {
+    font-weight: 500;
+}
+
 .order_button {
-    background-color: #ffffff;
     border: 1px solid #1f7294;
     color: #1f7294;
     font-size: 18px;
@@ -103,6 +155,14 @@ and open the template in the editor.
     padding: 22px 110px 22px 110px;
     margin-top:15px;
     margin-bottom: 55px;
+}
+
+#order_button_white {
+    background-color: #ffffff;
+}
+
+#order_button_gray {
+    background-color: #eee;
 }
 
 .pris_bild {
@@ -120,6 +180,41 @@ and open the template in the editor.
     margin-top:110px;
 }
 
+#prisbild2 {
+    background: url('../img/anhorig1.JPG') no-repeat center center;
+    margin-top:80px;
+}
+
+#prisbild3 {
+    background: url('../img/anhorig1.JPG') no-repeat center center;
+    margin-top:30px;
+    margin-bottom: 60px;
+}
+
 .gray_jumbo {
     background-color: #eee;
+}
+
+#priser_jumbotron {
+    background-color: #1f7294;
+    padding-bottom:100px;
+    padding-top:65px;
+}
+
+#led_lampa {
+    margin-top: 50px;
+}
+
+#leverans {
+    margin-top: 110px;
+}
+
+#bestallning_jumbo {
+    background-color: #1f7294;
+    padding-top: 80px;
+}
+
+#exempel_bestallning {
+    border: 1px solid #ffffff;
+    padding: 60px;
 }
