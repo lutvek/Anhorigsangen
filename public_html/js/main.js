@@ -34,11 +34,25 @@ $.ajax({
 								var router = new VueRouter();
 
 								var HemComp = Vue.extend({
-									template: Hem
+									template: Hem,
+									route: {
+										activate() {
+											this.$nextTick(function () {
+												$('#jumboCarousel').carousel('cycle');
+											})
+										}
+									}
 								});
 
 								var SesamComp = Vue.extend({
-									template: OmSesam
+									template: OmSesam,
+									route: {
+										activate() {
+											this.$nextTick(function () {
+												$('#omSesamCarousel').carousel('cycle');
+											})
+										}
+									}
 								});
 
 								var PriserComp = Vue.extend({
@@ -67,12 +81,12 @@ $.ajax({
 								router.start(App, 'body');
 
 								var Nav = new Vue({
-								  el: '#custom_navbar',
-								  methods: {
-								    slide: function () {
-								      $('#jumboCarousel').carousel("cycle");
-								    }
-								  }
+									el: '#custom_navbar',
+									methods: {
+										slide: function () {
+											$('#jumboCarousel').carousel("cycle");
+										}
+									}
 								});
 								/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
 
