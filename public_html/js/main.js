@@ -1,40 +1,39 @@
-var Hem = '';
-var OmSesam = '';
-var Priser = '';
-var Kontakt = '';
+var HemTemplate = '';
+var OmSesamTemplate = '';
+var PriserTemplate = '';
+var KontaktTemplate = '';
 
 $.ajax({
 	url: 'hem.html',
 	type: 'get',
 	success: function(html) {
-		Hem = html;
+		HemTemplate = html;
 
 		$.ajax({
 			url: 'omSesam.html',
 			type: 'get',
 			success: function(html) {
-				OmSesam = html;
+				OmSesamTemplate = html;
 
 				$.ajax({
 					url: 'priser.html',
 					type: 'get',
 					success: function(html) {
-						Priser = html;
+						PriserTemplate = html;
 
 						$.ajax({
 							url: 'kontakt.html',
 							type: 'get',
 							success: function(html) {
-								Kontakt = html;
+								KontaktTemplate = html;
 
-								/* OVANSTÅENDE ÄR TILLFÄLLIGT */
 
 								var App = Vue.extend({});
 
 								var router = new VueRouter();
 
-								var HemComp = Vue.extend({
-									template: Hem,
+								var Hem = Vue.extend({
+									template: HemTemplate,
 									route: {
 										activate() {
 											this.$nextTick(function () {
@@ -44,102 +43,58 @@ $.ajax({
 									}
 								});
 
-								var SesamComp = Vue.extend({
-									template: OmSesam,
+								var OmSesam = Vue.extend({
+									template: OmSesamTemplate,
 									route: {
 										activate() {
 											this.$nextTick(function () {
-												$('#omSesamCarousel').carousel('cycle');
+												$('#omSesamCarousel').carousel('cycle')
 											})
 										}
 									}
 								});
 
-								// Bilder för Sängens Delar
-								var PriserComp = Vue.extend({
-									template: Priser
+								var Priser = Vue.extend({
+									template: PriserTemplate
 								});
 
-								var KontaktComp = Vue.extend({
-									template: Kontakt
-								});
-
-								var Hjulen = Vue.extend({
-									route: {
-										activate() {
-											VisaDel = 'hjulen';
-											console.log(VisaDel);
-										}
-									}
-								});
-								var Madrassen = Vue.extend({
-									route: {
-										activate() {
-											VisaDel = 'madrassen';
-											console.log(VisaDel);
-										}
-									}
-								});
-								var Mekaniken = Vue.extend({
-									route: {
-										activate() {
-											VisaDel = 'mekaniken';
-											console.log(VisaDel);
-										}
-									}
-								});
-								var Stommen = Vue.extend({
-									route: {
-										activate() {
-											VisaDel = 'stommen';
-											console.log(VisaDel);
-										}
-									}
-								});
-								var Bottnen = Vue.extend({
-									route: {
-										activate() {
-											VisaDel = 'bottnen';
-											console.log(VisaDel);
-										}
-									}
+								var Kontakt = Vue.extend({
+									template: KontaktTemplate
 								});
 
 								router.map({
 									'/': {
-										component: HemComp
+										component: Hem
 									},
 									'/sesam': {
-										component: SesamComp,
+										component: OmSesam,
 										subRoutes: {
 											'/': {
-												component: Hjulen
+												component: Vue.extend({})
 											},
 											'/madrassen': {
-												component: Madrassen
+												component: Vue.extend({})
 											},
 											'/mekaniken': {
-												component: Mekaniken
+												component: Vue.extend({})
 											},
 											'/stommen': {
-												component: Stommen
+												component: Vue.extend({})
 											},
 											'/bottnen': {
-												component: Bottnen
+												component: Vue.extend({})
 											}
 										}
 									},
 									'/priser': {
-										component: PriserComp
+										component: Priser
 									},
 									'/kontakt': {
-										component: KontaktComp
+										component: Kontakt
 									}
 								});
 
 								router.start(App, 'body');
-								/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
-
 							}
 						});
 					}
@@ -148,3 +103,9 @@ $.ajax({
 		});
 	}
 });
+
+var smoothScroll = function(element_id) {
+	$('body').stop().animate({
+  	scrollTop: element_id.offset().top
+  }, 1000);
+}
