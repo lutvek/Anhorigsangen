@@ -157,13 +157,15 @@ and open the template in the editor.
     margin-bottom: 55px;
 }
 
-#order_button_white {
+.order_button_white {
     background-color: #ffffff;
 }
 
 #order_button_gray {
     background-color: #eee;
 }
+
+
 
 .pris_bild {
 
