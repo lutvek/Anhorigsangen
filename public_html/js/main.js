@@ -1,7 +1,7 @@
-var Hem = "";
-var OmSesam = "";
-var Priser = "";
-var Kontakt = "";
+var Hem = '';
+var OmSesam = '';
+var Priser = '';
+var Kontakt = '';
 
 $.ajax({
 	url: 'hem.html',
@@ -38,7 +38,7 @@ $.ajax({
 									route: {
 										activate() {
 											this.$nextTick(function () {
-												$('#jumboCarousel').carousel('cycle');
+												$('#jumboCarousel').carousel('cycle')
 											})
 										}
 									}
@@ -50,11 +50,18 @@ $.ajax({
 										activate() {
 											this.$nextTick(function () {
 												$('#omSesamCarousel').carousel('cycle');
+												new Vue({
+													el: '#omsesam',
+													data: {
+														VisaDel: 'hjulen'
+													}
+												})
 											})
 										}
 									}
 								});
 
+								// Bilder för Sängens Delar
 								var PriserComp = Vue.extend({
 									template: Priser
 								});
@@ -63,12 +70,70 @@ $.ajax({
 									template: Kontakt
 								});
 
+								var Hjulen = Vue.extend({
+									route: {
+										activate() {
+											VisaDel = 'hjulen';
+											console.log(VisaDel);
+										}
+									}
+								});
+								var Madrassen = Vue.extend({
+									route: {
+										activate() {
+											VisaDel = 'madrassen';
+											console.log(VisaDel);
+										}
+									}
+								});
+								var Mekaniken = Vue.extend({
+									route: {
+										activate() {
+											VisaDel = 'mekaniken';
+											console.log(VisaDel);
+										}
+									}
+								});
+								var Stommen = Vue.extend({
+									route: {
+										activate() {
+											VisaDel = 'stommen';
+											console.log(VisaDel);
+										}
+									}
+								});
+								var Bottnen = Vue.extend({
+									route: {
+										activate() {
+											VisaDel = 'bottnen';
+											console.log(VisaDel);
+										}
+									}
+								});
+
 								router.map({
 									'/': {
 										component: HemComp
 									},
 									'/sesam': {
-										component: SesamComp
+										component: SesamComp,
+										subRoutes: {
+											'/': {
+												component: Hjulen
+											},
+											'/madrassen': {
+												component: Madrassen
+											},
+											'/mekaniken': {
+												component: Mekaniken
+											},
+											'/stommen': {
+												component: Stommen
+											},
+											'/bottnen': {
+												component: Bottnen
+											}
+										}
 									},
 									'/priser': {
 										component: PriserComp
@@ -79,15 +144,6 @@ $.ajax({
 								});
 
 								router.start(App, 'body');
-
-								var Nav = new Vue({
-									el: '#custom_navbar',
-									methods: {
-										slide: function () {
-											$('#jumboCarousel').carousel("cycle");
-										}
-									}
-								});
 								/* NEDANSTÅENDE ÄR TILLFÄLLIGT */
 
 							}

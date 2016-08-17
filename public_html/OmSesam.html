@@ -1,4 +1,5 @@
 <!-- Sida: Anhörigsängen Sesam -->
+<div id="omsesam">
 <div id="omSesamBGjumbo1" class="jumbotron">
   <div class="container">
     <div id="omSesam1stRow" class="row">
@@ -82,38 +83,50 @@
       <div id="anvandning_cirkel"></div>
     </div>
   </div>
-  <div id="omSesam3rdRow" class="row">
-    <div id="sangens_delar" class="col-md-8">
-      <div id="sangens_delar_meny" class="col-md-4">
-        <div class="row">
-          back to top
+</div>
+<div id="omSesamBGjumbo2" class="jumbotron"> <!-- Bakgrund Rad 3 -->
+  <div class="container">
+    <div id="omSesam3rdRow" class="row"> <!-- innehåll: upp+meny+text:bild -->
+      <div id="sangens_delar" class="col-md-8"> <!-- innehåll: upp+meny:text -->
+        <div id="sangens_delar_meny" class="col-md-4"> <!-- innehåll: upp-knapp + meny -->
+          <a href="#sesam">Tillbaka Upp</a>
+          <div id="sangens_delar_meny_knappgrupp">
+            <div id="sangens_delar_rubrik">
+              <h3>Sängens Delar</h3>
+            </div>
+            <div class="sangens_delar_meny_knapp">
+              <a v-link="{ path: '/sesam', exact: true}">Om Hjulen</a>
+            </div>
+            <div class="sangens_delar_meny_knapp">
+              <a v-link="{ path: '/sesam/madrassen'}">Om Madrassen</a>
+            </div>
+            <div class="sangens_delar_meny_knapp">
+              <a v-link="{ path: '/sesam/mekaniken'}">Om Mekaniken</a>
+            </div>
+            <div class="sangens_delar_meny_knapp">
+              <a v-link="{ path: '/sesam/stommen'}">Om Skåpstommen</a>
+            </div>
+            <div class="sangens_delar_meny_knapp">
+              <a v-link="{ path: '/sesam/bottnen'}">Om Sängbottnen</a>
+            </div>
+          </div>
         </div>
-        <div id="sangens_delar_meny_knappgrupp" class="row">
-          <div class="sangens_delar_meny_knapp">
-            <div class="sangens_delar_meny_knapptext">Om Hjulen</div>
-          </div>
-          <div class="sangens_delar_meny_knapp">
-            <div class="sangens_delar_meny_knapptext">Om Madrassen</div>
-          </div>
-          <div class="sangens_delar_meny_knapp">
-            <div class="sangens_delar_meny_knapptext">Om Mekaniken</div>
-          </div>
-          <div class="sangens_delar_meny_knapp">
-            <div class="sangens_delar_meny_knapptext">Om Skåpstommen</div>
-          </div>
-          <div class="sangens_delar_meny_knapp">
-            <div class="sangens_delar_meny_knapptext">Om Sängbottnen</div>
+        <div id="sangens_delar_text" class="col-md-8">  <!-- innehåll: text -->
+          <div id="delar_text">
+            <div v-show="VisaDel == 'hjulen'">
+              Skåpet har fyra stycken länkhjul med dubbla svängkranslager och förzinkade byglar med uppfylld hygienklass för sjukhusmiljö. Hjulen har en ljusgrå fälg och grå hjulbana av termoplastisktgummi med en hårdhet på 70 shore för att förhindra märken på golv. Samtliga hjul är kapslade med trådskydd och de hjul som är placerade mot skåpets öppna sida är försedda med fotbroms.
+              <br><br>
+              En ny typ av fot på benbågarna har framtagits som inte ger märken på golv när skåpet efterjusteras. Hjulen har egenskaper som kan klara ojämnheter i golv och övergångar och de rullar tyst, mjukt och följsamt. Skåpet står mycket stabilt på de länkhjul vi har valt att använda. Hjulen behöver inte vara låsta när skåpet fälls ut och används, det är endast vid momentet att fälla in skåpet som behovet att låsa det främre hjulparet skulle kunna uppstå.
+              <br><br>
+              Hjulen tål 80 grader varmt vatten och tål att spritas med 45% Isopropanol-lösning. Hjulen uppfyller hygien krav nivå 2 för vårdmiljö.
+            </div>
           </div>
         </div>
       </div>
-      <div id="sangens_delar_text" class="col-md-8">
+      <div id="sangens_delar_bild" class="col-md-4"> <!-- innehåll: bilder -->
 
       </div>
-    </div>
-    <div id="sangens_delar_bild" class="col-md-4">
-
     </div>
   </div>
 </div>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+</div>
