@@ -50,12 +50,6 @@ $.ajax({
 										activate() {
 											this.$nextTick(function () {
 												$('#omSesamCarousel').carousel('cycle');
-												new Vue({
-													el: '#omsesam',
-													data: {
-														VisaDel: 'hjulen'
-													}
-												})
 											})
 										}
 									}
