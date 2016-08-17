@@ -135,7 +135,7 @@ body {
 }
 
 #square_row {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 #square_and_text_left {
@@ -170,19 +170,19 @@ body {
 }
 
 #jumbotron1 {
-  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
 }
 
 #jumbotron2 {
-  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
 }
 
 #jumbotron3 {
-  background: url('../img/bild_sova.jpg') no-repeat center center;
+  background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -209,6 +209,8 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
+    background-position: 52% 50%;
+  background-size:154%;
 }
 
 #jumboCarousel {
@@ -242,28 +244,10 @@ body {
   color: #c8c8c8;
   text-align: center;
 }
-#sesam_and_hr {
-    overflow:hidden;
-    white-space: nowrap;
-    margin-top: 50px;
-}
+
 
 #hr_text {
   margin-top:30px;
-}
-
-#sesam_innan_hr {
-  color: #1f7294;
-  font-size: 18px;
-  display:inline;
-}
-
-#hr_efter_sesam {
-  border: 1px solid #1f7294;
-  display:inline-block;
-  position: relative;
-  bottom:-16px;
-  width:100%;
 }
 
 #rubrik_sesam {
