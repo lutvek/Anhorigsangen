@@ -7,8 +7,6 @@ and open the template in the editor.
     Created on : 2016-aug-15, 15:08:53
     Author     : Ludvig
 */
-
-
 #priser_rubrik1 {
     font-weight: 300;
     color: #ffffff;
@@ -86,6 +84,27 @@ and open the template in the editor.
     margin-bottom:70px;
 }
 
+#sesam8_hr {
+    width: 310px;
+    margin-left: 0;
+    text-align: left;
+    border-color: #1f7294;
+}
+
+#sesam9_hr {
+    width: 310px;
+    margin-left: 0;
+    text-align: left;
+    border-color: green;
+}
+
+#sesam10_hr {
+    width: 310px;
+    margin-left: 0;
+    text-align: left;
+    border-color: #1f7294;
+}
+
 .sesam_g1303 {
     display:inline;
     color: #1f7294;
@@ -94,6 +113,9 @@ and open the template in the editor.
     margin-bottom: 20px;
 }
 
+#laslampa {
+    margin-top: 90px;
+}
 #bestallning_rubrik {
     color: #ffffff;
     font-size: 24px;
@@ -102,7 +124,7 @@ and open the template in the editor.
 }
 
 .hr_prislista {
-    border-color: #1f7294;
+    border-color: #414141;
 }
 
 .prislista_pris {
@@ -163,7 +185,7 @@ and open the template in the editor.
     font-weight: 300;
     padding: 22px 110px 22px 110px;
     margin-top:15px;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
 }
 
 .order_button_white {
@@ -187,34 +209,49 @@ and open the template in the editor.
 }
 
 #prisbild1 {
-    background: url('../img/anhorig1.JPG') no-repeat center center;
-    margin-top:110px;
+    background: url('../img/hela_sangen.jpg') no-repeat center center;
+    margin-top:85px;
+    background-size: 100%;
+    background-position: 50% 78%;
 }
 
 #prisbild2 {
-    background: url('../img/anhorig1.JPG') no-repeat center center;
-    margin-top:80px;
+    background: url('../img/stomme.jpg') no-repeat center center;
+    margin-top:50px;
+    background-size: 149%;
+    background-position: 50% 78%;
 }
 
 #prisbild3 {
-    background: url('../img/anhorig1.JPG') no-repeat center center;
-    margin-top:30px;
-    margin-bottom: 60px;
+    background: url('../img/lampa.jpg') no-repeat center center;
+    margin-bottom: 80px;
+     background-size: 180%;
+    background-position: 76% 87%;
+}
+
+#prisbild4 {
+    background: url('../img/kartong.jpg') no-repeat center center;
+    margin-bottom: 80px;
+    background-size: 126%;
+    background-position: 76% 87%;
 }
 
 .gray_jumbo {
     background-color: #eee;
+    padding-top: 90px;
+    padding-bottom: 0px;
+    margin-bottom:90px;
 }
 
 #priser_jumbotron {
     background-color: #1f7294;
+    //background-image: url('../img/symbol.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
     padding-bottom:100px;
     padding-top:65px;
-    margin-bottom: 50px;
-}
-
-#led_lampa {
-    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
 #leverans {
@@ -223,7 +260,9 @@ and open the template in the editor.
 
 #bestallning_jumbo {
     background-color: #1f7294;
-    padding-top: 80px;
+    padding-top: 90px;
+    padding-bottom:80px;
+    margin-bottom:90px;
 }
 
 #exempel_bestallning {
