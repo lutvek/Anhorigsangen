@@ -77,6 +77,15 @@ and open the template in the editor.
     text-align: left;
     width: 250px;
 }
+
+#sesam7_hr {
+    width: 290px;
+    margin-left: 0;
+    text-align: left;
+    border-color: #1f7294;
+    margin-bottom:70px;
+}
+
 .sesam_g1303 {
     display:inline;
     color: #1f7294;
@@ -201,6 +210,7 @@ and open the template in the editor.
     background-color: #1f7294;
     padding-bottom:100px;
     padding-top:65px;
+    margin-bottom: 50px;
 }
 
 #led_lampa {
