@@ -252,7 +252,6 @@ body {
 }
 
 #kontakt {
-    margin-top:70px;
     margin-bottom: 80px;
 }
 #anhorigtext{
@@ -293,16 +292,14 @@ body {
   background: url('../img/miljo.jpg') no-repeat center center;
   height: 480px;
   width: 480px;
+  margin-bottom:80px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
     background-position: 52% 50%;
   background-size:154%;
 }
-#miljoarbete_row {
-    padding-top:52px;
-    padding-bottom: 52px;
-}
+
 #jumboCarousel {
     margin-bottom:40px;
 }
