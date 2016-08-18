@@ -28,9 +28,22 @@ body {
   color: #414141;
 }
 
+.fadeIn-transition {
+  transition: all 0.3s ease;
+}
+
+.fadecontent.fadeIn-transition {
+  position: absolute;
+}
+
+.fadeIn-enter, .fadeIn-leave {
+  opacity: 0;
+}
+
 .left_td {
     width: 45%;
 }
+
 .bg {
   position: fixed;
   top:10px;
@@ -262,64 +275,6 @@ body {
   font-size:16px;
 }
 
-#omSesamBGjumbo1 {
-  background-color: #1f7294;
-  height: 600px;
-  padding: 0;
-}
-
-#omSesam1stRow {
-  height: 600px;
-}
-
-#omSesamMeny {
-  height: 100%;
-}
-
-#omSesamMeny_text {
-  padding-top: 50px;
-  padding-right: 50px;
-  color: white;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-#omSesamMeny_knappgrupp {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.omSesamMeny_knapp {
-  width: 120%;
-  padding-left: 15px;
-  margin-left: -15px;
-  height: 50px;
-  border-top: 1px solid #0a6084;
-  color: white;
-  font-size: 18px;
-  font-weight: 300;
-} .omSesamMeny_knapp:hover {
-  background-color: #0a6084;
-  cursor: pointer;
-}
-
-.omSesamMeny_knapptext {
-  padding-top: 12px;
-}
-
-#viewer {
-  padding: 0;
-}
-
-#omSesamCarousel {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-left: 5px solid white;
-  border-right: 5px solid white;
-}
-
 #button_row {
     margin-top: 110px;
     margin-bottom: 10px;
@@ -334,30 +289,63 @@ body {
     margin-left: 40px;
 }
 
-#slider_omA {
-  background: url('../img/slider_omA.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
-} #slider_omA2 {
-  background: url('../img/slider_omA2.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
-} #slider_omA3 {
-  background: url('../img/slider_omA3.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
-} #slider_omA4 {
-  background: url('../img/slider_omA4.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
-} #slider_omA5 {
-  background: url('../img/slider_omA5.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
-} #slider_omA6 {
-  background: url('../img/slider_omA6.jpg') no-repeat center center;
-  background-size: cover;
-  height: 600px;
+#omSesamBGjumbo1 {
+  background-color: #1f7294;
+  height: 700px;
+  padding: 0;
+}
+
+#omSesam1stRow {
+  height: 700px;
+}
+
+#omSesamMeny {
+  height: 100%;
+}
+
+#omSesamMeny_text {
+  padding-top: 100px;
+  padding-right: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#omSesamMeny_knappgrupp {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.omSesamMeny_knapp {
+  width: 120%;
+  padding-left: 20px;
+  margin-left: -20px;
+  height: 60px;
+  border-top: 1px solid #0a6084;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+} .omSesamMeny_knapp:hover {
+  background-color: #0a6084;
+  cursor: pointer;
+}
+
+.omSesamMeny_knapptext {
+  padding-top: 17px;
+}
+
+#slider_column {
+  height: 100%;
+  padding: 0;
+}
+
+#omSesamCarousel {
+  border-left: 5px solid white;
+}
+
+.sesam_slider>img {
+  height: 700px;
 }
 
 #omSesam2ndRow {
@@ -385,12 +373,12 @@ body {
 #omSesamBGjumbo2 {
   margin-top: 150px;
   background-color: #1f7294;
-  height: 700px;
+  height: 850px;
   padding: 0;
 }
 
 #omSesam3rdRow {
-  height: 700px;
+  height: 850px;
 }
 
 #sangens_delar {
@@ -402,19 +390,20 @@ body {
   height: 100%
 }
 
-#sangens_delar_meny>a {
+#sangens_delar_upp {
   font-size: 12px;
   font-weight: 600;
   color: white;
-} #sangens_delar_meny>a:hover {
+} #sangens_delar_upp:hover {
   font-weight: 700;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #sangens_delar_meny_knappgrupp {
   position: absolute;
-  height: 70%;
+  height: 50%;
   width: 100%;
   left: 50%;
   top: 50%;
@@ -424,14 +413,6 @@ body {
   -ms-transform: translate(-50%, -50%);
   border-right: 1px solid white;
   padding-right: 20px;
-}
-
-#sangens_delar_rubrik {
-  color: white;
-  font-size: 26px;
-  font-weight: 600;
-  text-align: right;
-  padding-bottom: 30px;
 }
 
 .sangens_delar_meny_knapp {
@@ -453,17 +434,32 @@ body {
 
 #sangens_delar_text {
   height: 100%;
+  padding-left: 5%;
 }
 
-#delar_text {
+#sangens_delar_rubrik {
+  font-size: 26px;
+  color: white;
+  padding-top: 25%;
+  position: relative;
+}
+
+#rubrikcontainer {
+  font-weight: 600;
+  width: 200px;
+  border-right: 1px solid white;
+}
+
+.menyval {
+  font-weight: 300;
+  bottom: 0;
+  left: 215px;
+}
+
+.delar_text {
   position: absolute;
+  top: 25%;
   width: 80%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   color: white;
   font-size: 16px;
   font-weight: 300;
@@ -472,12 +468,16 @@ body {
 #sangens_delar_bild {
   height: 100%;
   padding: 0;
-  border-right: 5px solid white;
 }
 
-#sangens_delar_bild>img {
-  width:100%;
-  height:100%;
+.delar_bild_container {
+  height: 100%;
+}
+
+.delar_bild_container>img {
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 #logo_navbar {

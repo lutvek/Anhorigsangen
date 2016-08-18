@@ -3,6 +3,9 @@ var OmSesamTemplate = '';
 var PriserTemplate = '';
 var KontaktTemplate = '';
 
+Vue.use(VueRouter);
+var router = new VueRouter();
+
 $.ajax({
 	url: 'hem.html',
 	type: 'get',
@@ -27,11 +30,6 @@ $.ajax({
 							success: function(html) {
 								KontaktTemplate = html;
 
-
-								var App = Vue.extend({});
-
-								var router = new VueRouter();
-
 								var Hem = Vue.extend({
 									template: HemTemplate,
 									route: {
@@ -48,8 +46,15 @@ $.ajax({
 									route: {
 										activate() {
 											this.$nextTick(function () {
-												$('#omSesamCarousel').carousel('cycle')
+												$('#omSesamCarousel').carousel('cycle');
 											})
+										}
+									},
+									methods: {
+										scrollTo : function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
 										}
 									}
 								});
@@ -94,6 +99,16 @@ $.ajax({
 									}
 								});
 
+								var App = Vue.extend({
+									methods: {
+										scrollTo : function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
+										}
+									}
+								});
+
 								router.start(App, 'body');
 							}
 						});
@@ -103,9 +118,3 @@ $.ajax({
 		});
 	}
 });
-
-var smoothScroll = function(element_id) {
-	$('body').stop().animate({
-  	scrollTop: element_id.offset().top
-  }, 1000);
-}
