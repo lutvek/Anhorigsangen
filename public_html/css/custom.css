@@ -9,7 +9,7 @@ table {
     margin-top:19px;
 }
 
-tr, th, td {
+.table_gray_border tr, th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -21,6 +21,15 @@ th {
 
 td {
     font-weight: 300;
+    vertical-align: top;
+}
+
+.table_no_border > tr, th, td {
+    border: none;
+}
+
+.td_blue {
+    color: #1f7294;
 }
 
 body {
@@ -54,12 +63,19 @@ body {
 }
 
 .brodtext {
-  font-size: 16px;
-  text-align: justify;
+  font-size: 16px !important;
   padding-left: 0px;
   padding-right: 30px;
   margin-bottom: 30px;
   font-weight:300;
+}
+
+.green_header {
+    color: green;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top:30px;
 }
 
 .navbar-toggle {
@@ -200,10 +216,43 @@ body {
   margin-bottom: 50px;
 }
 
+#om_oss_jumbo {
+    background: url('../img/kontakt_banner.jpg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom:120px;
+}
+
+#om_oss_jumbo_text {
+    font-size:30px;
+    font-weight: 300;
+    color: #ffffff;
+    padding-right:85px;
+}
+
+#kontakta_oss_button {
+    border: 1px solid #ffffff;
+    background-color: #1f7294;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 22px 110px 22px 110px;
+    margin-top:50px;
+}
+
 #varfor_anhorigsangen {
   margin-top: 50px;
 }
 
+#om_oss {
+    margin-top:40px;
+}
+
+#kontakt {
+    margin-top:70px;
+    margin-bottom: 80px;
+}
 #anhorigtext{
   font-size: 16px;
   font-style: Italic;
@@ -226,6 +275,32 @@ body {
   background-size:154%;
 }
 
+#circle_picture_om_oss1 {
+  background: url('../img/oss.jpg') no-repeat center center;
+  height: 480px;
+  width: 480px;
+  margin-bottom:100px;
+  margin-left: auto;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+    background-position: 52% 50%;
+  background-size:154%;
+}
+#circle_picture_om_oss2 {
+  background: url('../img/miljo.jpg') no-repeat center center;
+  height: 480px;
+  width: 480px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+    background-position: 52% 50%;
+  background-size:154%;
+}
+#miljoarbete_row {
+    padding-top:52px;
+    padding-bottom: 52px;
+}
 #jumboCarousel {
     margin-bottom:40px;
 }
