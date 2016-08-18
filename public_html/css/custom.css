@@ -30,13 +30,12 @@ body {
 
 .fadeIn-transition {
   transition: all 0.3s ease;
-}
-
-.fadecontent.fadeIn-transition {
-  position: absolute;
+  visibility: visible;
+  opacity: 1;
 }
 
 .fadeIn-enter, .fadeIn-leave {
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -402,15 +401,9 @@ body {
 }
 
 #sangens_delar_meny_knappgrupp {
-  position: absolute;
   height: 50%;
   width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  margin-top: 150px;
   border-right: 1px solid white;
   padding-right: 20px;
 }
@@ -434,32 +427,30 @@ body {
 
 #sangens_delar_text {
   height: 100%;
-  padding-left: 5%;
+  padding-left: 30px;
 }
 
 #sangens_delar_rubrik {
   font-size: 26px;
   color: white;
-  padding-top: 25%;
-  position: relative;
+  padding-top: 100px;
 }
 
 #rubrikcontainer {
   font-weight: 600;
   width: 200px;
   border-right: 1px solid white;
+  display: inline-block;
 }
 
 .menyval {
   font-weight: 300;
-  bottom: 0;
-  left: 215px;
+  display: inline-block;
 }
 
 .delar_text {
-  position: absolute;
-  top: 25%;
-  width: 80%;
+  padding-top: 32px;
+  width: 400px;
   color: white;
   font-size: 16px;
   font-weight: 300;
@@ -476,8 +467,6 @@ body {
 
 .delar_bild_container>img {
   height: 100%;
-  position: absolute;
-  top: 0;
 }
 
 #logo_navbar {
