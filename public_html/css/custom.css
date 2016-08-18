@@ -302,6 +302,7 @@ body {
 #jumboCarousel {
     margin-bottom:40px;
 }
+
 #saker {
     background: url('../img/saker.jpg') no-repeat center center;
 }
@@ -362,63 +363,84 @@ body {
     margin-left: 40px;
 }
 
-#omSesamBGjumbo1 {
-  background-color: #1f7294;
-  height: 700px;
-  padding: 0;
-}
-
 #omSesam1stRow {
+  background-color: #1f7294;
+  padding: 0;
   height: 700px;
 }
 
-#omSesamMeny {
-  height: 100%;
+#OmSesamMenyAndTextColumn {
+  width: 482px;
+  float: right;
+  hight: 700px;
 }
 
-#omSesamMeny_text {
+#omSesamText {
   padding-top: 100px;
-  padding-right: 50px;
+  padding-bottom: 60px;
+  padding-right: 100px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
 }
 
-#omSesamMeny_knappgrupp {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+#omSesamMenyKnappgrupp {
 }
 
-.omSesamMeny_knapp {
-  width: 120%;
-  padding-left: 20px;
-  margin-left: -20px;
+.omSesamMenyKnapp {
+  width: 100%;
   height: 60px;
   border-top: 1px solid #0a6084;
   color: white;
   font-size: 18px;
   font-weight: 300;
-} .omSesamMeny_knapp:hover {
+} .omSesamMenyKnapp:hover {
   background-color: #0a6084;
   cursor: pointer;
 }
 
-.omSesamMeny_knapptext {
+.omSesamMenyKnapptext {
   padding-top: 17px;
 }
 
-#slider_column {
+#omSesamCarouselColumn {
   height: 100%;
-  padding: 0;
+  width: 55%;
+  float: right;
 }
 
 #omSesamCarousel {
+  height: 700px;
   border-left: 5px solid white;
 }
 
-.sesam_slider>img {
+.omSesamCarouselSlide {
   height: 700px;
+}
+
+#omSesamCarouselSlide1 {
+  background: url('../img/slider_omA.jpg') no-repeat center center;
+  background-size: cover;
+}
+#omSesamCarouselSlide2 {
+  background: url('../img/slider_omA2.jpg') no-repeat center center;
+  background-size: cover;
+}
+#omSesamCarouselSlide3 {
+  background: url('../img/slider_omA3.jpg') no-repeat center center;
+  background-size: cover;
+}
+#omSesamCarouselSlide4 {
+  background: url('../img/slider_omA4.jpg') no-repeat center center;
+  background-size: cover;
+}
+#omSesamCarouselSlide5 {
+  background: url('../img/slider_omA5.jpg') no-repeat center center;
+  background-size: cover;
+}
+#omSesamCarouselSlide6 {
+  background: url('../img/slider_omA6.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 #omSesam2ndRow {
@@ -510,7 +532,7 @@ body {
   padding-top: 100px;
 }
 
-#rubrikcontainer {
+#sangens_delar_rubrik_statisk {
   font-weight: 600;
   width: 200px;
   border-right: 1px solid white;
@@ -518,6 +540,7 @@ body {
 }
 
 .menyval {
+  padding-left: 4px;
   font-weight: 300;
   display: inline-block;
 }

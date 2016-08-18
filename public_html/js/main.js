@@ -78,7 +78,7 @@ $.ajax({
 													case '/sesam/bottnen': elementRefHolder.bo = true;
 													break;
 												}
-											}, 400)
+											}, 300)
 										}
 									}
 								});
