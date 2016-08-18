@@ -8,8 +8,13 @@ table {
     font-size: 16px;
     margin-top:19px;
 }
+.table_no_border tr, .table_no_border tr > th, .table_no_border tr > td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
 
-.table_gray_border tr, th, td {
+.table_gray_border tr, .table_gray_border tr > th, .table_gray_border tr > td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -24,9 +29,6 @@ td {
     vertical-align: top;
 }
 
-.table_no_border > tr, th, td {
-    border: none;
-}
 
 .td_blue {
     color: #1f7294;
@@ -606,7 +608,7 @@ body {
     position: absolute;
     top:5%;
     right:0;
-    left:59%;
+    left:63%;
     bottom:0;
     height:533px;
     opacity: 0.4;
