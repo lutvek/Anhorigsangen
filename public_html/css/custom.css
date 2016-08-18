@@ -601,3 +601,13 @@ body {
     margin-top: 20px;
   }
 }
+
+#logo_background {
+    position: absolute;
+    top:5%;
+    right:0;
+    left:59%;
+    bottom:0;
+    height:533px;
+    opacity: 0.4;
+}
