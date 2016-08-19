@@ -1,4 +1,5 @@
 <!-- Sida: Hem -->
+<div id="hem">
 <!-- Carousel -->
 <div id="jumboCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -133,10 +134,11 @@
   </div>
     <div id="button_row" class="row">
         <div class="col-md-6">
-            <button id="las_mer_start" class="order_button order_button_white">Läs mer</button>
+            <button id="las_mer_start" class="order_button order_button_white" v-link="{ path: '/sesam' }">Läs mer</button>
         </div>
         <div class="col-md-6">
-            <button id="bestall_start" class="order_button order_button_white">Beställ</button>
+            <button id="bestall_start" class="order_button order_button_white" v-link="{ path: '/priser' }">Beställ</button>
         </div>
     </div>
+</div>
 </div>

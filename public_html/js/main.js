@@ -67,7 +67,7 @@ $.ajax({
 											elementRefHolder = this;
 											setTimeout(function() {
 												switch (elementRefHolder.$route.path) {
-													case '/sesam': elementRefHolder.hj = true;
+													case '/sesam/hjulen': elementRefHolder.hj = true;
 													break;
 													case '/sesam/madrassen': elementRefHolder.ma = true;
 													break;
@@ -91,6 +91,14 @@ $.ajax({
 									template: KontaktTemplate
 								});
 
+								router.beforeEach(function (transition) {
+									if(transition.to.path === '/') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/sesam') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/priser') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/kontakt') { window.scrollTo(0, 0); }
+								  transition.next()
+								})
+
 								router.map({
 									'/': {
 										component: Hem
@@ -98,7 +106,7 @@ $.ajax({
 									'/sesam': {
 										component: OmSesam,
 										subRoutes: {
-											'/': {
+											'/hjulen': {
 												component: Vue.extend({})
 											},
 											'/madrassen': {
