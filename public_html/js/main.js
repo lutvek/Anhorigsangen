@@ -84,11 +84,25 @@ $.ajax({
 								});
 
 								var Priser = Vue.extend({
-									template: PriserTemplate
+									template: PriserTemplate,
+									methods: {
+										scrollTo: function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
+										}
+									}
 								});
 
 								var Kontakt = Vue.extend({
-									template: KontaktTemplate
+									template: KontaktTemplate,
+									methods: {
+										scrollTo: function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
+										}
+									}
 								});
 
 								router.beforeEach(function (transition) {
@@ -131,15 +145,7 @@ $.ajax({
 									}
 								});
 
-								var App = Vue.extend({
-									methods: {
-										scrollTo : function(element) {
-											$('html, body').animate({
-        								scrollTop: $(element).offset().top
-      								}, 300)
-										}
-									}
-								});
+								var App = Vue.extend({});
 
 								router.start(App, 'body');
 							}
