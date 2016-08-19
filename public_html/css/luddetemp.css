@@ -35,35 +35,35 @@ and open the template in the editor.
 }
 
 #sesam1_hr {
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-left: 0;
     text-align: left;
     width: 340px;
 }
 
 #sesam2_hr {
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-left: 0;
     text-align: left;
     width: 590px;
 }
 
 #sesam3_hr {
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-left: 0;
     text-align: left;
     width: 250px;
 }
 
 #sesam4_hr {
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-left: 0;
     text-align: left;
     width: 250px;
 }
 
 #sesam5_hr {
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-left: 0;
     text-align: left;
     width: 250px;
@@ -80,7 +80,7 @@ and open the template in the editor.
     width: 290px;
     margin-left: 0;
     text-align: left;
-    border-color: #1f7294;
+    border-color: #33618c;
     margin-bottom:70px;
 }
 
@@ -88,33 +88,33 @@ and open the template in the editor.
     width: 310px;
     margin-left: 0;
     text-align: left;
-    border-color: #1f7294;
+    border-color: #33618c;
 }
 
 #sesam9_hr {
     width: 310px;
     margin-left: 0;
     text-align: left;
-    border-color: green;
+    border-color: #9dc180;
 }
 
 #sesam10_hr {
     width: 310px;
     margin-left: 0;
     text-align: left;
-    border-color: #1f7294;
+    border-color: #33618c;
 }
 
 #sesam11_hr {
     width: 250px;
     margin-left: 0;
     text-align: left;
-    border-color: #1f7294;
+    border-color: #33618c;
 }
 
 .sesam_g1303 {
     display:inline;
-    color: #1f7294;
+    color: #33618c;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -150,7 +150,7 @@ and open the template in the editor.
 }
 
 .pris_text_blue {
-    color: #1f7294;
+    color: #33618c;
     font-size:18px;
 }
 
@@ -162,14 +162,14 @@ and open the template in the editor.
 }
 .pris_text_pris {
     font-size: 22px;
-    color: #1f7294;
+    color: #33618c;
     font-weight: 600;
 }
 
 .pris_text_rubrik {
     font-size: 24px;
     font-weight: 500;
-    color: #1f7294;
+    color: #33618c;
 }
 .pris_per_st {
     margin-top: 40px;
@@ -186,8 +186,8 @@ and open the template in the editor.
 }
 
 .order_button {
-    border: 1px solid #1f7294;
-    color: #1f7294;
+    border: 1px solid #33618c;
+    color: #33618c;
     font-size: 18px;
     font-weight: 300;
     padding: 22px 110px 22px 110px;
@@ -200,7 +200,7 @@ and open the template in the editor.
 }
 
 #order_button_gray {
-    background-color: #eee;
+    background-color: #fafafa;
 }
 
 
@@ -244,14 +244,14 @@ and open the template in the editor.
 }
 
 .gray_jumbo {
-    background-color: #eee;
+    background-color: #fafafa;
     padding-top: 90px;
     padding-bottom: 0px;
     margin-bottom:90px;
 }
 
 #priser_jumbotron {
-    background-color: #1f7294;
+    background-color: #33618c;
     //background-image: url('../img/symbol.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -266,7 +266,7 @@ and open the template in the editor.
 }
 
 #bestallning_jumbo {
-    background-color: #1f7294;
+    background-color: #33618c;
     padding-top: 90px;
     padding-bottom:80px;
     margin-bottom:90px;

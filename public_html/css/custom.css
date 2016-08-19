@@ -31,7 +31,7 @@ td {
 
 
 .td_blue {
-    color: #1f7294;
+    color: #33618c;
 }
 
 body {
@@ -72,7 +72,7 @@ body {
 }
 
 .green_header {
-    color: green;
+    color: #9dc180;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -98,11 +98,11 @@ body {
 
 .nav>li>a.v-link-active
 {
-  color: #1f7294;
+  color: #33618c;
   background-color: #ffffff;
-  -webkit-box-shadow:inset 0px -3px 0px 0px #1f7294;
-  -moz-box-shadow:inset 0px -3px 0px 0px #1f7294;
-  box-shadow:inset 0px -3px 0px 0px #1f7294;
+  -webkit-box-shadow:inset 0px -3px 0px 0px #33618c;
+  -moz-box-shadow:inset 0px -3px 0px 0px #33618c;
+  box-shadow:inset 0px -3px 0px 0px #33618c;
 }
 
 .nav>li>a:visited,
@@ -118,7 +118,7 @@ body {
   line-height: 290px;
   text-align: center;
   width: 290px;
-  background-color:#1f7294;
+  background-color:#33618c;
 }
 
 .square_text {
@@ -136,7 +136,7 @@ body {
 }
 
 .blue_row {
-    background-color: #1f7294;
+    background-color: #33618c;
 }
 
 .carousel.fade {
@@ -241,7 +241,7 @@ body {
 
 #kontakta_oss_button {
     border: 1px solid #ffffff;
-    background-color: #1f7294;
+    background-color: #33618c;
     color: #ffffff;
     font-size: 18px;
     font-weight: 300;
@@ -267,7 +267,7 @@ body {
   padding-left: 0px;
   padding-right: 30px;
   padding-top:16px;
-  color:#1f7294;
+  color:#33618c;
 }
 
 #circle_picture {
@@ -345,7 +345,7 @@ body {
 }
 
 #rubrik_sesam {
-  color: #1f7294;
+  color: #33618c;
   font-size:24px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -371,7 +371,7 @@ body {
 }
 
 #omSesam1stRow {
-  background-color: #1f7294;
+  background-color: #33618c;
   padding: 0;
   height: 700px;
 }
@@ -491,7 +491,7 @@ body {
 
 #omSesamBGjumbo2 {
   margin-top: 150px;
-  background-color: #1f7294;
+  background-color: #33618c;
   height: 850px;
   padding: 0;
 }
