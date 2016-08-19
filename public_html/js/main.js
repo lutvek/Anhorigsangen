@@ -54,7 +54,7 @@ $.ajax({
 										}
 									},
 									data: function() {
-										return {hj:true, ma:false, me:false, st:false, bo:false}
+										return {visaDel: 'hjulen', nextDel: 'hjulen'}
 									},
 									methods: {
 										scrollTo: function(element) {
@@ -62,23 +62,25 @@ $.ajax({
         								scrollTop: $(element).offset().top
       								}, 300)
 										},
-										setData: function() {
-											this.hj = this.ma = this.me = this.st = this.bo = false;
+										setData: function(string) {
+											if(this.visaDel == string) return;
+											this.nextDel = string;
+											this.visaDel = 'none';
 											elementRefHolder = this;
 											setTimeout(function() {
-												switch (elementRefHolder.$route.path) {
-													case '/sesam/hjulen': elementRefHolder.hj = true;
+												switch (elementRefHolder.nextDel) {
+													case 'hjulen': elementRefHolder.visaDel = 'hjulen';
 													break;
-													case '/sesam/madrassen': elementRefHolder.ma = true;
+													case 'madrassen': elementRefHolder.visaDel = 'madrassen';
 													break;
-													case '/sesam/mekaniken': elementRefHolder.me = true;
+													case 'mekaniken': elementRefHolder.visaDel = 'mekaniken';
 													break;
-													case '/sesam/stommen': elementRefHolder.st = true;
+													case 'stommen': elementRefHolder.visaDel = 'stommen';
 													break;
-													case '/sesam/bottnen': elementRefHolder.bo = true;
+													case 'bottnen': elementRefHolder.visaDel = 'bottnen';
 													break;
 												}
-											}, 300)
+											}, 305)
 										}
 									}
 								});
@@ -118,24 +120,7 @@ $.ajax({
 										component: Hem
 									},
 									'/sesam': {
-										component: OmSesam,
-										subRoutes: {
-											'/hjulen': {
-												component: Vue.extend({})
-											},
-											'/madrassen': {
-												component: Vue.extend({})
-											},
-											'/mekaniken': {
-												component: Vue.extend({})
-											},
-											'/stommen': {
-												component: Vue.extend({})
-											},
-											'/bottnen': {
-												component: Vue.extend({})
-											}
-										}
+										component: OmSesam
 									},
 									'/priser': {
 										component: Priser

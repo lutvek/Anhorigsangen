@@ -43,9 +43,19 @@ body {
   transition: all 0.3s ease;
   visibility: visible;
   opacity: 1;
+} .fadeIn-enter, .fadeIn-leave {
+  visibility: hidden;
+  opacity: 0;
 }
 
-.fadeIn-enter, .fadeIn-leave {
+.fadeInBig-transition {
+  transition: all 2s ease;
+  visibility: visible;
+  opacity: 1;
+} .fadeInBig-enter {
+  visibility: hidden;
+  opacity: 0;
+} .fadeInBig-leave {
   visibility: hidden;
   opacity: 0;
 }
@@ -408,11 +418,11 @@ body {
   font-weight: 400;
   margin-left: -5000px;
   padding-left:5000px;
-  
+
 } .omSesamMenyKnapp:hover {
   background-color: #0a6084;
   cursor: pointer;
-  
+
 }
 
 .omSesamMenyKnapptext {
@@ -469,7 +479,7 @@ body {
 }
 
 #omSesam2ndRow {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 #anvandning_text {
@@ -490,90 +500,125 @@ body {
 }
 
 #omSesamBGjumbo2 {
-  margin-top: 150px;
+  margin-top: 125px;
   background-color: #33618c;
-  height: 850px;
   padding: 0;
-}
-
-#omSesam3rdRow {
   height: 850px;
 }
 
-#sangens_delar {
+#sangensDelarBildContainer {
+  height: 100%;
+  width: 0%; /* @media */
+  float: right;
+  border-left: 10px solid white;
+}
+
+.sangensDelarBild {
   height: 100%;
 }
-
-#sangens_delar_meny {
-  height: 100%
+#hjul {
+    background: url('../img/hjul.jpg') no-repeat center center;
+    background-size:cover;
+}
+#madrass {
+    background: url('../img/madrass.jpg') no-repeat center center;
+    background-size:cover;
+}
+#mekanism {
+    background: url('../img/mekanism.jpg') no-repeat center center;
+    background-size:cover;
+}
+#stomme {
+    background: url('../img/skåp.jpg') no-repeat center center;
+    background-size:cover;
+}
+#botten{
+    background: url('../img/botten.jpg') no-repeat center center;
+    background-size:cover;
 }
 
-#sangens_delar_upp {
+#sangensDelarMenyOchText {
+  width: 101%;
+  height: 850px;
+  position:relative;
+  z-index:0;
+}
+
+#sangensDelarUpp {
   font-size: 12px;
   font-weight: 300;
   color: white;
   margin-top: 50px;
-} #sangens_delar_upp:hover {
+} #sangensDelarUpp:hover {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-#sangens_delar_meny_knappgrupp {
-  height: 50%;
-  width: 100%;
-  margin-top: 150px;
-  border-right: 1px solid white;
-  padding-right: 20px;
+#sangensDelarMenyKnappgrupp {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    height: 50%;
+    width: 230px;
+    border-right: 1px solid white;
+    padding-right: 15px;
 }
 
-.sangens_delar_meny_knapp {
-  width: 100%;
+.sangensDelarMenyKnapp {
   height: 50px;
-  font-size: 18px;
+  font-size: 22px;
   text-align: right;
 }
 
-.sangens_delar_meny_knapp>a {
+.sangensDelarMenyKnapp>a {
   color: white;
   font-weight: 300;
-} .sangens_delar_meny_knapp>a:hover, .sangens_delar_meny_knapp>a.v-link-active {
+} .sangensDelarMenyKnapp>a:hover, .sangensDelarMenyKnapp>a.aktiv {
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
   outline: none;
 }
 
-#sangens_delar_text {
+#sangensDelarRubrikOchText {
+  position: absolute;
+  top: 107px;
+  left: 300px;
   height: 100%;
-  padding-left: 30px;
 }
 
-#sangens_delar_rubrik {
+#sangensDelarRubrik {
   font-size: 26px;
   color: white;
-  padding-top: 100px;
 }
 
-#sangens_delar_rubrik_statisk {
+#sangensDelarRubrikStatisk {
   font-weight: 600;
   width: 200px;
   border-right: 1px solid white;
   display: inline-block;
 }
 
-.menyval {
+.sangensDelarRubrikVal {
   padding-left: 4px;
   font-weight: 300;
   display: inline-block;
 }
 
-.delar_text {
+.sangensDelarText {
   padding-top: 32px;
   width: 400px;
   color: white;
   font-size: 16px;
   font-weight: 300;
+}
+
+
+
+
+#tekniskSpecContainer {
+    margin-top: 110px;
 }
 
 #logo_background {
@@ -584,51 +629,6 @@ body {
     bottom:0;
     height:533px;
     opacity: 0.4;
-}
-
-#hjul {
-    background: url('../img/hjul.jpg') no-repeat center center;
-    background-size:cover;
-}
-
-#madrass {
-    background: url('../img/madrass.jpg') no-repeat center center;
-    background-size:cover;
-}
-
-#mekanism {
-    background: url('../img/mekanism.jpg') no-repeat center center;
-    background-size:cover;
-}
-
-#stomme {
-    background: url('../img/skåp.jpg') no-repeat center center;
-    background-size:cover;
-}
-
-#botten{
-    background: url('../img/botten.jpg') no-repeat center center;
-    background-size:cover;
-}
-
-#tekniskSpecContainer {
-    margin-top: 100px;
-}
-
-#sangens_delar_bild {
-  height: 100%;
-  padding: 0;
-  float:right;
-  width: 700px;
-  border-left: 10px solid white;
-}
-
-.delar_bild_container {
-  height: 100%;
-}
-
-.delar_bild_container>img {
-  height: 100%;
 }
 
 #logo_navbar {
@@ -643,19 +643,18 @@ body {
     padding-top:35px;
     font-size: 12px;
   }
-
   #logo_navbar {
     height: 55px;
     margin-top: 20px;
   }
-  #omSesamCarouselColumn { 
+  #omSesamCarouselColumn {
   width: 53%;
   }
   #OmSesamMenyAndTextColumn {
       width: 430px;
   }
-  #sangens_delar_bild {
-      width:0%
+  #sangensDelarBildContainer {
+      width: 0%;
   }
 }
 
@@ -666,22 +665,19 @@ body {
     padding-top:40px;
     font-size: 15px;
   }
-
   #logo_navbar {
     height: 65px;
     margin-top: 20px;
   }
-  
-  #omSesamCarouselColumn { 
+  #omSesamCarouselColumn {
   width: 62%;
   }
   #OmSesamMenyAndTextColumn {
       width: 430px;
   }
-  #sangens_delar_bild {
-      width:30%
+  #sangensDelarBildContainer {
+      width:0;
   }
-    
 }
 
 @media (min-width: 1200px) {
@@ -691,40 +687,63 @@ body {
     padding-top: 46px;
     font-size: 17px;
   }
-
   #logo_navbar {
     height: 75px;
     margin-top: 20px;
   }
-  #omSesamCarouselColumn { 
+  #omSesamCarouselColumn {
   width: 64%;
   }
   #OmSesamMenyAndTextColumn {
       width: 420px;
   }
-  #sangens_delar_bild {
-      width:34%
+  #sangensDelarBildContainer {
+      width:38%
+  }
+}
+
+@media (min-width: 1900px) {
+
+  .nav>li>a {
+    padding-bottom:46px;
+    padding-top: 46px;
+    font-size: 17px;
+  }
+  #logo_navbar {
+    height: 75px;
+    margin-top: 20px;
+  }
+  #omSesamCarouselColumn {
+  width: 62%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 420px;
+  }
+  #sangensDelarBildContainer {
+      width:38%
   }
 }
 
 @media (min-width: 2000px) {
 
-  #omSesamCarouselColumn { 
+  #omSesamCarouselColumn {
   width: 60%;
   }
   #OmSesamMenyAndTextColumn {
       width: 430px;
   }
+  #sangensDelarBildContainer {
+      width: 41%
+  }
 }
 
 @media (min-width: 2400px) {
-  #omSesamCarouselColumn { 
+  #omSesamCarouselColumn {
   width: 50%;
   }
-  
   #OmSesamMenyAndTextColumn, #omSesamText {
       width: 600px;
+  }#sangensDelarBildContainer {
+      width: 45%
   }
 }
-
-
