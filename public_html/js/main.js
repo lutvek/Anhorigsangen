@@ -67,7 +67,7 @@ $.ajax({
 											elementRefHolder = this;
 											setTimeout(function() {
 												switch (elementRefHolder.$route.path) {
-													case '/sesam': elementRefHolder.hj = true;
+													case '/sesam/hjulen': elementRefHolder.hj = true;
 													break;
 													case '/sesam/madrassen': elementRefHolder.ma = true;
 													break;
@@ -84,12 +84,34 @@ $.ajax({
 								});
 
 								var Priser = Vue.extend({
-									template: PriserTemplate
+									template: PriserTemplate,
+									methods: {
+										scrollTo: function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
+										}
+									}
 								});
 
 								var Kontakt = Vue.extend({
-									template: KontaktTemplate
+									template: KontaktTemplate,
+									methods: {
+										scrollTo: function(element) {
+											$('html, body').animate({
+        								scrollTop: $(element).offset().top
+      								}, 300)
+										}
+									}
 								});
+
+								router.beforeEach(function (transition) {
+									if(transition.to.path === '/') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/sesam') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/priser') { window.scrollTo(0, 0); }
+									if(transition.to.path === '/kontakt') { window.scrollTo(0, 0); }
+								  transition.next()
+								})
 
 								router.map({
 									'/': {
@@ -98,7 +120,7 @@ $.ajax({
 									'/sesam': {
 										component: OmSesam,
 										subRoutes: {
-											'/': {
+											'/hjulen': {
 												component: Vue.extend({})
 											},
 											'/madrassen': {
@@ -123,15 +145,7 @@ $.ajax({
 									}
 								});
 
-								var App = Vue.extend({
-									methods: {
-										scrollTo : function(element) {
-											$('html, body').animate({
-        								scrollTop: $(element).offset().top
-      								}, 300)
-										}
-									}
-								});
+								var App = Vue.extend({});
 
 								router.start(App, 'body');
 							}
