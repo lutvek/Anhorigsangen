@@ -199,7 +199,7 @@ body {
 
 #jumboline {
   width: 20%;
-  border:3px solid #ffffff;
+  border:1px solid #ffffff;
   float:left;
 }
 
@@ -207,30 +207,33 @@ body {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
+  padding-bottom:65px;
 }
 
 #jumbotron2 {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
+  padding-bottom:65px;
 }
 
 #jumbotron3 {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom: 50px;
+  padding-bottom:65px;
 }
 
 #om_oss_jumbo {
     background: url('../img/kontakt_banner.jpg') no-repeat center center;
     background-size: cover;
     margin-bottom: 100px;
-    padding-top: 120px;
-    padding-bottom:120px;
+    padding-top: 97.5px;
+    padding-bottom:97px;
 }
 
 #om_oss_jumbo_text {
-    font-size:30px;
+    font-size:28px;
     font-weight: 300;
     color: #ffffff;
     padding-right:85px;
