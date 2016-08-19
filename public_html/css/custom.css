@@ -412,7 +412,7 @@ body {
 
 .omSesamMenyKnapp {
   height: 64px;
-  border-top: 1px solid #0a6084;
+  border-top: 1px solid #23517c;
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -420,7 +420,7 @@ body {
   padding-left:5000px;
 
 } .omSesamMenyKnapp:hover {
-  background-color: #0a6084;
+  background-color: #23517c;
   cursor: pointer;
 
 }
