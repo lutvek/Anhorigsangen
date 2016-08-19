@@ -84,7 +84,7 @@
       <div id="anvandning_text">
         <div style="width: 50%; color: #1f7294; font-size: 24px;">
           Användning
-          <hr>
+          <hr id="sesam11_hr">
         </div>
         Sängskåpet har en öppen sida, vilken ställs mot vägg när skåpet inte används. Lösningen ger ett smidigt skåp med bra ventilation som tar liten plats i rummet. Skåpet rullas mjukt och styrvänligt även i utfällt läge och kan därför placeras var som helst i rummet så att exempelvis ögonkontakt kan hållas med anhörig. Den goda höjden över golvet på bädden gör att anhöriga kan komma väldigt nära varandra eftersom patientbädden oftast är högre än vad sängar normalt är. Allt för en bra kontakt mellan anhörig och patient!
         <br><br>
@@ -97,11 +97,25 @@
   </div>
 </div>
 <div id="omSesamBGjumbo2" class="jumbotron"> <!-- Bakgrund Rad 3 -->
+    <div id="sangens_delar_bild"> <!-- innehåll: bilder -->
+        <div v-show="hj" transition="fadeIn" id="hjul" class="delar_bild_container"></div>
+        <div v-show="ma" transition="fadeIn" id="madrass" class="delar_bild_container"></div>
+        <div v-show="me" transition="fadeIn" id="mekanism" class="delar_bild_container"></div>
+        <div v-show="st" transition="fadeIn" id="stomme" class="delar_bild_container"></div>
+        <div v-show="bo" transition="fadeIn" id="botten" class="delar_bild_container"></div>
+        <!--
+        <div v-show="hj" transition="fadeIn" class="delar_bild_container"><img src="img/hjul.jpg"></div>
+        <div v-show="ma" transition="fadeIn" class="delar_bild_container"><img src="img/madrass.jpg"></div>
+        <div v-show="me" transition="fadeIn" class="delar_bild_container"><img src="img/mekanism.jpg"></div>
+        <div v-show="st" transition="fadeIn" class="delar_bild_container"><img src="img/skåp.jpg"></div>
+        <div v-show="bo" transition="fadeIn" class="delar_bild_container"><img src="img/botten.jpg"></div>
+        -->
+      </div>
   <div class="container">
     <div id="omSesam3rdRow" class="row"> <!-- innehåll: upp+meny+text:bild -->
       <div id="sangens_delar" class="col-md-8"> <!-- innehåll: upp+meny:text -->
         <div id="sangens_delar_meny" class="col-md-4"> <!-- innehåll: upp-knapp + meny -->
-          <div id="sangens_delar_upp" v-on:click="scrollTo('body')">Tillbaka Upp</div>
+          <div id="sangens_delar_upp" v-on:click="scrollTo('body')">&#8743 &nbsp  Tillbaka Upp</div>
           <div id="sangens_delar_meny_knappgrupp">
             <div class="sangens_delar_meny_knapp">
               <a v-link="{ path: '/sesam', exact: true}" v-on:click="setData()">Om Hjulen</a>
@@ -161,15 +175,9 @@
           </div>
         </div>
       </div>
-      <div id="sangens_delar_bild" class="col-md-4"> <!-- innehåll: bilder -->
-        <div v-show="hj" transition="fadeIn" class="delar_bild_container"><img src="img/hjul.jpg"></div>
-        <div v-show="ma" transition="fadeIn" class="delar_bild_container"><img src="img/madrass.jpg"></div>
-        <div v-show="me" transition="fadeIn" class="delar_bild_container"><img src="img/mekanism.jpg"></div>
-        <div v-show="st" transition="fadeIn" class="delar_bild_container"><img src="img/skåp.jpg"></div>
-        <div v-show="bo" transition="fadeIn" class="delar_bild_container"><img src="img/botten.jpg"></div>
-      </div>
     </div>
   </div>
+    
 </div>
 
 <div id="tekniskSpecContainer" class="container">

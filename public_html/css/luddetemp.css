@@ -105,6 +105,13 @@ and open the template in the editor.
     border-color: #1f7294;
 }
 
+#sesam11_hr {
+    width: 250px;
+    margin-left: 0;
+    text-align: left;
+    border-color: #1f7294;
+}
+
 .sesam_g1303 {
     display:inline;
     color: #1f7294;
