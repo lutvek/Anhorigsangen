@@ -43,29 +43,42 @@
       </div>
     </div>
   </div>
-
-  <div id="OmSesamMenyAndTextColumn">
-    <div id="omSesamText">
-      <div style="font-size: 24px;">
-        Om Anhörigsängen Sesam
-        <hr>
-      </div>
-        Anhörigsängen Sesam är ett sängskåp speciellt framtaget för sjukhus och vårdmiljöer. Samtliga komponenter är valda med omsorg för lång hållbarhet över tid och uppfyller hygienklass 2. Sängskåpet förflyttas mjukt och följsamt samtidigt som ut- och infällning sker genom intuitiva och ergonomiska rörelser. Bäddens sitthöjd är 53 cm över golv med madrass vilket ger anhöriga möjlighet att vara väldigt nära varandra.
+    <div class="container">
+        <div id="OmSesamMenyAndTextColumn">
+            <div id="omSesamText">
+                <div style="font-size: 24px;">
+                    Om Anhörigsängen Sesam
+                    <hr>
+                </div>
+                Anhörigsängen Sesam är ett sängskåp speciellt framtaget för sjukhus och vårdmiljöer. Samtliga komponenter är valda med omsorg för lång hållbarhet över tid och uppfyller hygienklass 2. Sängskåpet förflyttas mjukt och följsamt samtidigt som ut- och infällning sker genom intuitiva och ergonomiska rörelser. Bäddens sitthöjd är 53 cm över golv med madrass vilket ger anhöriga möjlighet att vara väldigt nära varandra.
+            </div>
+            <div id="omSesamMenyKnappgrupp">
+                <div class="omSesamMenyKnapp">
+                    <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#omSesam2ndRow')">
+                        Användning
+                        
+                    </div>
+                </div>
+                <div class="omSesamMenyKnapp">
+                    <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#omSesam3rdRow')">
+                        Sängens Delar 
+                        
+                    </div>
+                </div>
+                <div class="omSesamMenyKnapp">
+                    <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#tekniskSpecContainer')">
+                        Teknisk Specifikation 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="omSesamMenyKnappgrupp">
-      <div class="omSesamMenyKnapp">
-        <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#omSesam2ndRow')">Användning</div>
-      </div>
-      <div class="omSesamMenyKnapp">
-        <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#omSesam3rdRow')">Sängens Delar</div>
-      </div>
-      <div class="omSesamMenyKnapp">
-        <div class="omSesamMenyKnapptext" v-on:click="scrollTo('#tekniskSpecContainer')">Tekniska Specifikationer</div>
-      </div>
-    </div>
-  </div>
-
 </div>
+    
+  
+
+
 
 <div class="container">
   <div id="omSesam2ndRow" class="row">

@@ -135,6 +135,10 @@ body {
   font-size: 16px;
 }
 
+.blue_row {
+    background-color: #1f7294;
+}
+
 .carousel.fade {
   opacity: 1;
 }
@@ -370,48 +374,66 @@ body {
 }
 
 #OmSesamMenyAndTextColumn {
-  width: 482px;
-  float: right;
-  hight: 700px;
+  width: 101%;
+  height: 700px;
+  position:relative;
+  z-index:0;
 }
 
 #omSesamText {
+  width: 400px;
   padding-top: 100px;
   padding-bottom: 60px;
   padding-right: 100px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
 #omSesamMenyKnappgrupp {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
 }
 
 .omSesamMenyKnapp {
-  width: 100%;
-  height: 60px;
+  height: 64px;
   border-top: 1px solid #0a6084;
   color: white;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -5000px;
+  padding-left:5000px;
+  
 } .omSesamMenyKnapp:hover {
   background-color: #0a6084;
   cursor: pointer;
+  
 }
 
 .omSesamMenyKnapptext {
-  padding-top: 17px;
+  padding-top: 20px;
+}
+
+.arrow_link {
+    display: inline;
+    padding-right: 46px;
+    float: right;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: -6px;
 }
 
 #omSesamCarouselColumn {
   height: 100%;
-  width: 55%;
   float: right;
 }
 
 #omSesamCarousel {
   height: 700px;
-  border-left: 5px solid white;
+  border-left: 10px solid white;
+  z-index:1;
 }
 
 .omSesamCarouselSlide {
@@ -553,6 +575,16 @@ body {
   font-weight: 300;
 }
 
+#logo_background {
+    position: absolute;
+    top:5%;
+    right:0;
+    left:63%;
+    bottom:0;
+    height:533px;
+    opacity: 0.4;
+}
+
 #sangens_delar_bild {
   height: 100%;
   padding: 0;
@@ -583,6 +615,12 @@ body {
     height: 55px;
     margin-top: 20px;
   }
+  #omSesamCarouselColumn { 
+  width: 53%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 430px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -596,6 +634,13 @@ body {
   #logo_navbar {
     height: 65px;
     margin-top: 20px;
+  }
+  
+  #omSesamCarouselColumn { 
+  width: 62%;
+  }
+#OmSesamMenyAndTextColumn {
+      width: 430px;
   }
 }
 
@@ -611,14 +656,32 @@ body {
     height: 75px;
     margin-top: 20px;
   }
+  #omSesamCarouselColumn { 
+  width: 64%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 420px;
+  }
 }
 
-#logo_background {
-    position: absolute;
-    top:5%;
-    right:0;
-    left:63%;
-    bottom:0;
-    height:533px;
-    opacity: 0.4;
+@media (min-width: 2000px) {
+
+  #omSesamCarouselColumn { 
+  width: 60%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 430px;
+  }
 }
+
+@media (min-width: 2400px) {
+  #omSesamCarouselColumn { 
+  width: 50%;
+  }
+  
+  #OmSesamMenyAndTextColumn, #omSesamText {
+      width: 600px;
+  }
+}
+
+
