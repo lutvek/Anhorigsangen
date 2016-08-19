@@ -3,6 +3,9 @@ var OmSesamTemplate = '';
 var PriserTemplate = '';
 var KontaktTemplate = '';
 
+var currentPath;
+var elementRefHolder;
+
 Vue.use(VueRouter);
 var router = new VueRouter();
 
@@ -50,11 +53,32 @@ $.ajax({
 											})
 										}
 									},
+									data: function() {
+										return {hj:true, ma:false, me:false, st:false, bo:false}
+									},
 									methods: {
-										scrollTo : function(element) {
+										scrollTo: function(element) {
 											$('html, body').animate({
         								scrollTop: $(element).offset().top
       								}, 300)
+										},
+										setData: function() {
+											this.hj = this.ma = this.me = this.st = this.bo = false;
+											elementRefHolder = this;
+											setTimeout(function() {
+												switch (elementRefHolder.$route.path) {
+													case '/sesam': elementRefHolder.hj = true;
+													break;
+													case '/sesam/madrassen': elementRefHolder.ma = true;
+													break;
+													case '/sesam/mekaniken': elementRefHolder.me = true;
+													break;
+													case '/sesam/stommen': elementRefHolder.st = true;
+													break;
+													case '/sesam/bottnen': elementRefHolder.bo = true;
+													break;
+												}
+											}, 300)
 										}
 									}
 								});
