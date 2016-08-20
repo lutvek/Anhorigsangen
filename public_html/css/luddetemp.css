@@ -251,11 +251,11 @@ and open the template in the editor.
 }
 
 #priser_jumbotron {
+    position:relative;
+    overflow:hidden;
     background-color: #33618c;
-    //background-image: url('../img/symbol.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 50%;
+    background-image: url('../img/priser_top.jpg');
+    background-size: cover;
     padding-bottom:105px;
     padding-top:68px;
     margin-bottom: 90px;

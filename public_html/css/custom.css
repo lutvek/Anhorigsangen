@@ -245,10 +245,13 @@ body {
     margin-bottom: 100px;
     padding-top: 97.5px;
     padding-bottom:97px;
+    height:350px;
 }
 
 #om_oss_jumbo_text {
-    font-size:28px;
+    text-transform: uppercase;
+    font-size:32px;
+    line-height: 38px;
     font-weight: 300;
     color: #ffffff;
     padding-right:85px;
@@ -638,7 +641,7 @@ body {
 
 #logo_background {
     position: absolute;
-    top:5%;
+    top:-27%;
     right:0;
     left:63%;
     bottom:0;
@@ -674,6 +677,27 @@ body {
   }
   #bestall_start {
     margin-right:0px;
+  }
+  #prisbild1, #prisbild2, #prisbild3, #prisbild4 {
+      margin:auto;
+      margin-bottom:50px;
+      margin-top: 0px !important;
+  }
+  #prisbild4 {
+      margin-top: 40px !important;
+  }
+  #sesam1_hr, #sesam2_hr, #sesam3_hr, #sesam4_hr, #sesam5_hr, #sesam6_hr, #sesam7_hr, #sesam8_hr {
+      width: 100% !important;
+  }
+  .pris_bild {
+      width: 300px !important;
+      height: 300px !important;
+  }
+  #laslampa {
+      margin-top: 0px !important;
+  }
+  #leverans {
+      margin-top: 0px !important;
   }
 }
 
