@@ -385,12 +385,13 @@ body {
 }
 
 #las_mer_start {
-    float:right;
-    margin-right: 40px;
+    width: 300px;
+    margin-left:160px
 }
 
 #bestall_start {
-    margin-left: 40px;
+    width: 300px;
+    margin-right:160px;
 }
 
 #omSesam1stRow {
@@ -436,6 +437,10 @@ body {
   background-color: #23517c;
   cursor: pointer;
 
+}
+
+.center_col {
+    text-align:center;
 }
 
 .omSesamMenyKnapptext {
@@ -649,6 +654,32 @@ body {
   margin-top: 5px;
 }
 
+@media (max-width: 992px) {
+    #circle_picture {
+      width: 0px;
+      height:0px;
+  }
+  #square_and_text_right {
+      float: none;
+  }
+  .boll {
+      margin:auto;
+      margin-top: 50px;
+  }
+  #square_and_text_left {
+      margin-right:0;
+  }
+  #jumboCarousel {
+      margin-bottom:0px;
+  }
+  #las_mer_start {
+    margin-left:0px
+  }
+  #bestall_start {
+    margin-right:0px;
+  }
+}
+
 @media (min-width: 768px) {
 
   .nav>li>a {
@@ -668,6 +699,17 @@ body {
   }
   #sangensDelarBildContainer {
       width: 0%;
+  }
+  #circle_picture {
+      width: 0px;
+      height:0px;
+  }
+  #square_and_text_right {
+      float: none;
+  }
+  .boll {
+      margin:auto;
+      margin-top: 50px;
   }
 }
 
@@ -690,6 +732,17 @@ body {
   }
   #sangensDelarBildContainer {
       width:0;
+  }
+  #circle_picture {
+      height: 480px;
+      width: 480px;
+  }
+  #square_and_text_right {
+      float: right;
+  }
+  .boll {
+      margin:0;
+      margin-top: 50px;
   }
 }
 
