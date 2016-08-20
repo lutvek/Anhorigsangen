@@ -137,13 +137,21 @@ body {
   border: none;
 }
 
-.square {
+.boll {
   margin-top: 50px;
   height: 290px;
-  line-height: 290px;
-  text-align: center;
   width: 290px;
   background-color:#33618c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.under_boll_rubrik {
+    color: #33618c;
+    font-size: 24px;
+    font-weight:300;
+    margin-bottom: 15px;
 }
 
 .square_text {
@@ -231,21 +239,18 @@ body {
 #jumbotron1 {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
-  margin-bottom: 50px;
   padding-bottom:65px;
 }
 
 #jumbotron2 {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
-  margin-bottom: 50px;
   padding-bottom:65px;
 }
 
 #jumbotron3 {
   background: url('../img/bakgrund_forsta.jpg') no-repeat center center;
   background-size: cover;
-  margin-bottom: 50px;
   padding-bottom:65px;
 }
 
@@ -253,12 +258,14 @@ body {
     background: url('../img/kontakt_banner.jpg') no-repeat center center;
     background-size: cover;
     margin-bottom: 100px;
-    padding-top: 97.5px;
-    padding-bottom:97px;
+    padding-top: 98px;
+    padding-bottom:100px;
 }
 
 #om_oss_jumbo_text {
-    font-size:28px;
+    text-transform: uppercase;
+    font-size:32px;
+    line-height: 38px;
     font-weight: 300;
     color: #ffffff;
     padding-right:85px;
@@ -303,7 +310,7 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-    background-position: 52% 50%;
+  background-position: 52% 50%;
   background-size:154%;
 }
 
@@ -332,21 +339,26 @@ body {
 }
 
 #jumboCarousel {
-    margin-bottom:40px;
+    margin-bottom:90px;
 }
 
 #saker {
-    background: url('../img/saker.jpg') no-repeat center center;
+    background: url('../img/säker.png') no-repeat center center;
+    background-size:cover;
 }
 
 #flexibel {
-    background: url('../img/flexibel.jpg') no-repeat center center;
+    background: url('../img/flexibel.png') no-repeat center center;
     margin:auto;
     margin-top: 50px;
+    background-size:cover;
+
 }
 
 #bekvam {
-    background: url('../img/bekvam.jpg') no-repeat center center;
+    background: url('../img/bekväm.png') no-repeat center center;
+    background-size:cover;
+
 }
 
 #custom_navbar {
@@ -363,7 +375,6 @@ body {
   color: #c8c8c8;
   text-align: center;
 }
-
 
 #hr_text {
   margin-top:30px;
@@ -387,12 +398,13 @@ body {
 }
 
 #las_mer_start {
-    float:right;
-    margin-right: 40px;
+    width: 300px;
+    margin-left:160px
 }
 
 #bestall_start {
-    margin-left: 40px;
+    width: 300px;
+    margin-right:160px;
 }
 
 #omSesam1stRow {
@@ -474,6 +486,10 @@ z-index:0;
 }} .omSesamMenyKnapp:hover {
   background-color: #13517c;
   cursor: pointer;
+}
+
+.center_col {
+    text-align:center;
 }
 
 .omSesamMenyKnapptext {
@@ -719,8 +735,6 @@ z-index:0;
   width: 100%;
 }}
 
-
-
 .arrow_link {
     display: inline;
     padding-right: 46px;
@@ -734,6 +748,83 @@ z-index:0;
     margin-top: 110px;
 }
 
+#logo_background {
+    position: absolute;
+    top:-27%;
+    right:0;
+    left:63%;
+    bottom:0;
+    height:533px;
+    opacity: 0.4;
+}
+
+#logo_navbar {
+  height: 55px;
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+    #circle_picture {
+      width: 0px;
+      height:0px;
+  }
+  #square_and_text_right {
+      float: none;
+  }
+  .boll {
+      margin:auto;
+      margin-top: 50px;
+  }
+  #square_and_text_left {
+      margin-right:0;
+  }
+  #jumboCarousel {
+      margin-bottom:0px;
+  }
+  #las_mer_start {
+    margin-left:0px
+  }
+  #bestall_start {
+    margin-right:0px;
+  }
+  #prisbild1, #prisbild2, #prisbild3, #prisbild4 {
+      margin:auto;
+      margin-bottom:50px;
+      margin-top: 0px !important;
+  }
+  #prisbild4 {
+      margin-top: 40px !important;
+  }
+  #sesam1_hr, #sesam2_hr, #sesam3_hr, #sesam4_hr, #sesam5_hr, #sesam6_hr, #sesam7_hr, #sesam8_hr {
+      width: 100% !important;
+  }
+  .pris_bild {
+      width: 300px !important;
+      height: 300px !important;
+  }
+  #laslampa {
+      margin-top: 0px !important;
+  }
+  #leverans {
+      margin-top: 0px !important;
+  }
+  #circle_picture_om_oss1 {
+      height: 0px !important;
+      width: 0px !important;
+  }
+  #circle_picture_om_oss2 {
+      width: 300px !important;
+      height: 300px !important;
+      margin:auto;
+  }
+  #om_oss_jumbo {
+      margin-bottom: 20px !important;
+  }
+  .green_header {
+      margin-top:40px !important;
+  }
+}
+
 @media (min-width: 768px) {
 
   .nav>li>a {
@@ -745,6 +836,28 @@ z-index:0;
     height: 55px;
     margin-top: 20px;
   }
+
+  #omSesamCarouselColumn {
+  width: 53%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 430px;
+  }
+  #sangensDelarBildContainer {
+      width: 0%;
+  }
+  #circle_picture {
+      width: 0px;
+      height:0px;
+  }
+  #square_and_text_right {
+      float: none;
+  }
+  .boll {
+      margin:auto;
+      margin-top: 50px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -758,6 +871,28 @@ z-index:0;
     height: 65px;
     margin-top: 20px;
   }
+
+  #omSesamCarouselColumn {
+  width: 62%;
+  }
+  #OmSesamMenyAndTextColumn {
+      width: 430px;
+  }
+  #sangensDelarBildContainer {
+      width:0;
+  }
+  #circle_picture {
+      height: 480px;
+      width: 480px;
+  }
+  #square_and_text_right {
+      float: right;
+  }
+  .boll {
+      margin:0;
+      margin-top: 50px;
+  }
+
 }
 
 @media (min-width: 1200px) {
