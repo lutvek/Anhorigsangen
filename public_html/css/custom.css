@@ -243,9 +243,8 @@ body {
     background: url('../img/kontakt_banner.jpg') no-repeat center center;
     background-size: cover;
     margin-bottom: 100px;
-    padding-top: 97.5px;
-    padding-bottom:97px;
-    height:350px;
+    padding-top: 98px;
+    padding-bottom:100px;
 }
 
 #om_oss_jumbo_text {
@@ -361,7 +360,6 @@ body {
   color: #c8c8c8;
   text-align: center;
 }
-
 
 #hr_text {
   margin-top:30px;
@@ -632,9 +630,6 @@ body {
   font-weight: 300;
 }
 
-
-
-
 #tekniskSpecContainer {
     margin-top: 110px;
 }
@@ -698,6 +693,21 @@ body {
   }
   #leverans {
       margin-top: 0px !important;
+  }
+  #circle_picture_om_oss1 {
+      height: 0px !important;
+      width: 0px !important;
+  }
+  #circle_picture_om_oss2 {
+      width: 300px !important;
+      height: 300px !important;
+      margin:auto;
+  }
+  #om_oss_jumbo {
+      margin-bottom: 20px !important;
+  }
+  .green_header {
+      margin-top:40px !important;
   }
 }
 
