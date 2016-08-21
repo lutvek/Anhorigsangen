@@ -492,7 +492,8 @@ z-index:0;
   margin-left: -5000px;
   padding-left: 5000px;
 }} .omSesamMenyKnapp:hover {
-  background-color: #285178;
+  background-color: rgb(40,81,120);
+  background-color: rgba(40,81,120, 0.6);
   cursor: pointer;
 }
 
