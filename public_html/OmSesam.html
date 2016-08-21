@@ -138,10 +138,37 @@
             <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarRubrikVal">Mekanismen</div>
             <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarRubrikVal">Stommen</div>
             <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarRubrikVal">Botten</div>
+
+            <div class="dropdown" id="sangensDelarDropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarDropVal">Hjulen</span>
+                <div v-show="visaDel == 'madrassen'" transition="fadeIn" class="sangensDelarDropVal">Madrassen</div>
+                <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarDropVal">Mekanismen</div>
+                <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarDropVal">Stommen</div>
+                <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarDropVal">Botten</div>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="sangensDelarMenyKnapp">
+                  <a v-on:click="setData('hjulen')" v-bind:class="{'aktiv': (nextDel == 'hjulen')}">Om Hjulen</a>
+                </div>
+                <div class="sangensDelarMenyKnapp">
+                  <a v-on:click="setData('madrassen')" v-bind:class="{'aktiv': (nextDel == 'madrassen')}">Om Madrassen</a>
+                </div>
+                <div class="sangensDelarMenyKnapp">
+                  <a v-on:click="setData('mekaniken')" v-bind:class="{'aktiv': (nextDel == 'mekaniken')}">Om Mekanismen</a>
+                </div>
+                <div class="sangensDelarMenyKnapp">
+                  <a v-on:click="setData('stommen')" v-bind:class="{'aktiv': (nextDel == 'stommen')}">Om Skåpstommen</a>
+                </div>
+                <div class="sangensDelarMenyKnapp">
+                  <a v-on:click="setData('bottnen')" v-bind:class="{'aktiv': (nextDel == 'bottnen')}">Om Sängbotten</a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarText">
-            Skåpet har fyra stycken länkhjul med dubbla svängkranslager och förzinkade byglar med uppfylld hygienklass för sjukhusmiljö. Hjulen har en ljusgrå fälg och grå hjulbana av termoplastisktgummi med en hårdhet på 70 shore för att förhindra märken på golv. Samtliga hjul är kapslade med trådskydd och de hjul som är placerade mot skåpets öppna sida är försedda med fotbroms. Skåpet står mycket stabilt på de länkhjul vi har valt att använda. 
+            Skåpet har fyra stycken länkhjul med dubbla svängkranslager och förzinkade byglar med uppfylld hygienklass för sjukhusmiljö. Hjulen har en ljusgrå fälg och grå hjulbana av termoplastisktgummi med en hårdhet på 70 shore för att förhindra märken på golv. Samtliga hjul är kapslade med trådskydd och de hjul som är placerade mot skåpets öppna sida är försedda med fotbroms. Skåpet står mycket stabilt på de länkhjul vi har valt att använda.
             <br><br>
             En ny typ av fot på benbågarna har framtagits som inte ger märken på golv när skåpet efterjusteras. Hjulen har egenskaper som kan klara ojämnheter i golv och övergångar och de rullar tyst, mjukt och följsamt. Hjulen behöver inte vara låsta när skåpet fälls ut och används, det är endast vid momentet att fälla in skåpet som behovet att låsa det främre hjulparet skulle kunna uppstå.
             <br><br>

@@ -483,7 +483,6 @@ z-index:0;
   width: 32%;
   border-top: none;
   text-align: center;
-  background-color: #33618c;
 }}} @media(min-width: 992px) {.omSesamMenyKnapp {
   border-top: 1px solid #285178;
   color: white;
@@ -613,7 +612,6 @@ z-index:0;
 
 #sangensDelarBildContainer {
   height: 100%;
-  width: 0%; /* @media */
   float: right;
   border-left: 10px solid white;
 } @media(max-width: 1199px) {#sangensDelarBildContainer {
@@ -651,33 +649,35 @@ z-index:0;
   z-index:0;
 } @media(max-width: 1199px) {#sangensDelarMenyOchText {
   height: 600px;
-}}@media(max-width: 991px) {#sangensDelarMenyOchText {
+  padding-top: 42px;
+}} @media(max-width: 991px) {#sangensDelarMenyOchText {
   height: 100%;
 }}
 
 #sangensDelarUpp {
   font-size: 12px;
   font-weight: 300;
-  color: white;
-  margin-top: 50px;
+  color: #33618c;
+  margin-top: 0;
 } #sangensDelarUpp:hover {
-  color: white;
   text-decoration: none;
   cursor: pointer;
 } @media(max-width: 1199px) {#sangensDelarUpp {
-  visibility: hidden;
+  display: none;
 }}
 
 #sangensDelarMenyKnappgrupp {
   position: absolute;
-  top: 169px;
+  top: 173px;
   left: -50px;
   height: 50%;
   width: 25%;
   border-right: 1px solid #33618c;
   padding-right: 15px;
-} @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
-  top: 60px;
+} @media(max-width: 767px) {#sangensDelarMenyKnappgrupp {
+  display: none;
+}} @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
+  top: 110px;
   width: 30%;
   height: 400px;
   left: 0;
@@ -691,6 +691,9 @@ z-index:0;
   margin-bottom: 30px;
 }} @media(max-width: 991px) {.sangensDelarMenyKnapp {
   font-size:16px;
+}} @media(max-width: 767px) {.sangensDelarMenyKnapp {
+  margin-bottom: 0;
+  text-align: left;
 }}
 
 .sangensDelarMenyKnapp>a {
@@ -713,7 +716,13 @@ z-index:0;
   padding-right: 5%;
   padding-bottom: 107px;
   width: 100%;
-}} @media(min-width: 1200px) {#sangensDelarRubrikOchText {
+}} @media(max-width: 767px) {#sangensDelarRubrikOchText {
+  float: right;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 107px;
+  width: 100%;
+}}@media(min-width: 1200px) {#sangensDelarRubrikOchText {
   position: absolute;
   top: 107px;
   left: 277px;
@@ -723,6 +732,7 @@ z-index:0;
 #sangensDelarRubrik {
   font-size: 26px;
   color: #33618c;
+  width: 100%;
 }
 
 #sangensDelarRubrikStatisk {
@@ -736,7 +746,15 @@ z-index:0;
   padding-left: 4px;
   font-weight: 300;
   display: inline-block;
-}
+} @media (max-width: 767px) {.sangensDelarRubrikVal {
+  display: none;
+}}
+
+#sangensDelarDropdown {
+  display:inline;
+} @media (min-width: 768px) {#sangensDelarDropdown {
+  display: none;
+}}
 
 .sangensDelarText {
   padding-top: 32px;
