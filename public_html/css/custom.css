@@ -2,6 +2,12 @@ html{
     overflow-y: scroll;
 }
 
+
+
+.custom_hide {
+    display:none
+}
+
 table {
     border-collapse: collapse;
     width:100%;
@@ -409,6 +415,9 @@ body {
 
 #omSesam1stRow {
   background-color: #33618c;
+  background-image: url('../img/pattern2.png');
+  background-repeat: repeat;
+  background-size:10%;
   padding: 0;
   margin-bottom: 0;
 } @media(min-width: 768px) {#omSesam1stRow {
@@ -476,15 +485,15 @@ z-index:0;
   text-align: center;
   background-color: #33618c;
 }}} @media(min-width: 992px) {.omSesamMenyKnapp {
-  border-top: 1px solid #23517c;
+  border-top: 1px solid #285178;
   color: white;
   font-size: 16px;
   font-weight: 400;
-  border-top: 1px solid #23517c;
+  border-top: 1px solid #285178;
   margin-left: -5000px;
   padding-left: 5000px;
 }} .omSesamMenyKnapp:hover {
-  background-color: #13517c;
+  background-color: #285178;
   cursor: pointer;
 }
 
@@ -508,11 +517,11 @@ z-index:0;
   width: 50%;
   height: 356px;
 }} @media(min-width: 992px) {#omSesamCarousel {
-  width: 62%;
+  width: 60%;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 1200px) {#omSesamCarousel {
-  width: 68%;
+  width: 64%;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 1500px) {#omSesamCarousel {
@@ -574,7 +583,8 @@ z-index:0;
 #anvandning_cirkel {
   margin-top: 50px;
   margin-right: 35px;
-  background: url('../img/anvandning_circle.jpg') no-repeat center center;
+  background: url('../img/anvandning.jpg');
+  background-size:93%;
   height: 480px;
   width: 480px;
   margin: auto;
@@ -595,7 +605,7 @@ z-index:0;
 
 #omSesamBGjumbo2 {
   margin-top: 125px;
-  background-color: #33618c;
+  background-color: #fafafa;
   padding: 0;
 } @media(min-width: 1200px) {#omSesamBGjumbo2 {
   height: 850px;
@@ -642,7 +652,7 @@ z-index:0;
 } @media(max-width: 1199px) {#sangensDelarMenyOchText {
   height: 600px;
 }}@media(max-width: 991px) {#sangensDelarMenyOchText {
-  height: 680px;
+  height: 100%;
 }}
 
 #sangensDelarUpp {
@@ -661,27 +671,30 @@ z-index:0;
 #sangensDelarMenyKnappgrupp {
   position: absolute;
   top: 169px;
-  left: 0;
+  left: -50px;
   height: 50%;
   width: 25%;
-  border-right: 1px solid white;
+  border-right: 1px solid #33618c;
   padding-right: 15px;
 } @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
   top: 60px;
   width: 30%;
   height: 400px;
+  left: 0;
 }}
 
 .sangensDelarMenyKnapp {
-  height: 50px;
-  font-size: 22px;
+  height: 40px;
+  font-size: 18px;
   text-align: right;
 } @media(max-width: 1199px) {.sangensDelarMenyKnapp {
   margin-bottom: 30px;
+}} @media(max-width: 991px) {.sangensDelarMenyKnapp {
+  font-size:16px;
 }}
 
 .sangensDelarMenyKnapp>a {
-  color: white;
+  color: #33618c;
   font-weight: 300;
 } .sangensDelarMenyKnapp>a:hover, .sangensDelarMenyKnapp>a.aktiv {
   font-weight: 500;
@@ -692,7 +705,7 @@ z-index:0;
 
 #sangensDelarRubrikOchText {
   top: 107px;
-  left: 300px;
+  left: 277px;
   height: 100%;
 } @media(max-width: 1199px) {#sangensDelarRubrikOchText {
   float: right;
@@ -703,19 +716,19 @@ z-index:0;
 }} @media(min-width: 1200px) {#sangensDelarRubrikOchText {
   position: absolute;
   top: 107px;
-  left: 300px;
+  left: 277px;
   height: 100%;
 }}
 
 #sangensDelarRubrik {
   font-size: 26px;
-  color: white;
+  color: #33618c;
 }
 
 #sangensDelarRubrikStatisk {
   font-weight: 600;
   width: 200px;
-  border-right: 1px solid white;
+  border-right: 1px solid #33618c;
   display: inline-block;
 }
 
@@ -728,7 +741,7 @@ z-index:0;
 .sangensDelarText {
   padding-top: 32px;
   width: 400px;
-  color: white;
+  color: #656565;
   font-size: 16px;
   font-weight: 300;
 } @media (max-width: 1199px) {.sangensDelarText {
