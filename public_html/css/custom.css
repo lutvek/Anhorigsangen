@@ -675,13 +675,13 @@ z-index:0;
   width: 25%;
   border-right: 1px solid #33618c;
   padding-right: 15px;
-} @media(max-width: 767px) {#sangensDelarMenyKnappgrupp {
-  display: none;
-}} @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
+} @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
   top: 110px;
   width: 30%;
   height: 400px;
   left: 0;
+}} @media(max-width: 767px) {#sangensDelarMenyKnappgrupp {
+  display: none;
 }}
 
 .sangensDelarMenyKnapp {
@@ -723,7 +723,7 @@ z-index:0;
   padding-right: 0px;
   padding-bottom: 107px;
   width: 100%;
-}}@media(min-width: 1200px) {#sangensDelarRubrikOchText {
+}} @media(min-width: 1200px) {#sangensDelarRubrikOchText {
   position: absolute;
   top: 107px;
   left: 277px;
@@ -734,14 +734,18 @@ z-index:0;
   font-size: 26px;
   color: #33618c;
   width: 100%;
-}
+} @media(max-width: 767px) {#sangensDelarRubrik {
+  font-size: calc(2vw + 2vh + 0.4vmin);
+}}
 
 #sangensDelarRubrikStatisk {
   font-weight: 600;
   width: 200px;
   border-right: 1px solid #33618c;
   display: inline-block;
-}
+} @media(max-width: 767px) {#sangensDelarRubrikStatisk {
+  width: 50%;
+}}
 
 .sangensDelarRubrikVal {
   padding-left: 4px;
