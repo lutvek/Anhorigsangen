@@ -57,7 +57,12 @@ body {
 
 #logo_navbar {
   height: 55px;
-  margin-top: 5px;
+  margin: 20px;
+}
+
+#logo2_navbar {
+  height: 75px;
+  margin: 20px;
 }
 
 .fadeIn-transition {
@@ -112,8 +117,8 @@ body {
 
 .navbar-toggle {
   background-color: #ffffff;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 40px;
+  margin-right: 20px;
   border-color: #414141;
 }
 
@@ -298,7 +303,7 @@ body {
 #kontakt {
     margin-bottom: 80px;
 }
-#anhorigtext{
+#anhorigtext {
   font-size: 16px;
   font-style: Italic;
   margin-bottom: 16px;
@@ -454,7 +459,14 @@ z-index:0;
   font-size: 16px;
   font-weight: 300;
 }} @media(min-width: 992px) {#omSesamText {
-  width: 400px;
+  width: 45%;
+  padding-top: 100px;
+  padding-right: 100px;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}} @media(min-width: 1200px) {#omSesamText {
+  width: 40%;
   padding-top: 100px;
   padding-right: 100px;
   color: white;
@@ -521,11 +533,11 @@ z-index:0;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 1200px) {#omSesamCarousel {
-  width: 64%;
+  width: 63%;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 1500px) {#omSesamCarousel {
-  width: 62%;
+  width: 59%;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 2100px) {#omSesamCarousel {
@@ -794,25 +806,10 @@ z-index:0;
     margin-top: 110px;
 }
 
-#logo_background {
-    position: absolute;
-    top:-27%;
-    right:0;
-    left:63%;
-    bottom:0;
-    height:533px;
-    opacity: 0.4;
-}
-
-#logo_navbar {
-  height: 55px;
-  margin-top: 5px;
-}
-
-@media (max-width: 992px) {
-    #circle_picture {
-      width: 0px;
-      height:0px;
+@media(max-width: 991px) {
+  #circle_picture {
+    width: 0px;
+    height:0px;
   }
   #square_and_text_right {
       float: none;
@@ -869,6 +866,19 @@ z-index:0;
   .green_header {
       margin-top:40px !important;
   }
+
+  #logo_navbar {
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  #logo2_navbar {
+    display: none;
+  }
+  #logo_navbar {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -878,14 +888,13 @@ z-index:0;
     padding-top:35px;
     font-size: 12px;
   }
-  #logo_navbar {
-    height: 55px;
+  #logo2_navbar {
+    margin: 0;
     margin-top: 20px;
   }
 
-
   #sangensDelarBildContainer {
-      width: 0%;
+      width: 0;
   }
   #circle_picture {
       width: 0px;
@@ -911,6 +920,10 @@ z-index:0;
   #logo_navbar {
     height: 65px;
     margin-top: 20px;
+  }
+
+  #logo2_navbar {
+    display: none;
   }
 
   #sangensDelarBildContainer {
@@ -944,6 +957,7 @@ z-index:0;
   #logo_navbar {
     height: 75px;
     margin-top: 20px;
+    margin-bottom: 0;
   }
   #sangensDelarBildContainer {
       width:38%
