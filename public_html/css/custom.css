@@ -609,7 +609,7 @@ z-index:0;
   margin-top: 125px;
   background-color: #fafafa;
   padding: 0;
-} @media(min-width: 1200px) {#omSesamBGjumbo2 {
+} @media(min-width: 1023px) {#omSesamBGjumbo2 {
   height: 850px;
 }}
 
@@ -617,7 +617,7 @@ z-index:0;
   height: 100%;
   float: right;
   border-left: 10px solid white;
-} @media(max-width: 1199px) {#sangensDelarBildContainer {
+} @media(max-width: 1023px) {#sangensDelarBildContainer {
   display: none;
 }}
 
@@ -650,7 +650,7 @@ z-index:0;
   height: 850px;
   position:relative;
   z-index:0;
-} @media(max-width: 1199px) {#sangensDelarMenyOchText {
+} @media(max-width: 1023px) {#sangensDelarMenyOchText {
   height: 600px;
   padding-top: 42px;
 }} @media(max-width: 991px) {#sangensDelarMenyOchText {
@@ -665,7 +665,7 @@ z-index:0;
 } #sangensDelarUpp:hover {
   text-decoration: none;
   cursor: pointer;
-} @media(max-width: 1199px) {#sangensDelarUpp {
+} @media(max-width: 1023px) {#sangensDelarUpp {
   display: none;
 }}
 
@@ -677,7 +677,7 @@ z-index:0;
   width: 25%;
   border-right: 1px solid #33618c;
   padding-right: 15px;
-} @media(max-width: 1199px) {#sangensDelarMenyKnappgrupp {
+} @media(max-width: 1023px) {#sangensDelarMenyKnappgrupp {
   top: 110px;
   width: 30%;
   height: 400px;
@@ -690,7 +690,7 @@ z-index:0;
   height: 40px;
   font-size: 18px;
   text-align: right;
-} @media(max-width: 1199px) {.sangensDelarMenyKnapp {
+} @media(max-width: 1023px) {.sangensDelarMenyKnapp {
   margin-bottom: 30px;
 }} @media(max-width: 991px) {.sangensDelarMenyKnapp {
   font-size:16px;
@@ -713,7 +713,7 @@ z-index:0;
   top: 107px;
   left: 277px;
   height: 100%;
-} @media(max-width: 1199px) {#sangensDelarRubrikOchText {
+} @media(max-width: 1023px) {#sangensDelarRubrikOchText {
   float: right;
   padding-left: 35%;
   padding-right: 5%;
@@ -725,6 +725,11 @@ z-index:0;
   padding-right: 0px;
   padding-bottom: 107px;
   width: 100%;
+}} @media(min-width: 1024px) {#sangensDelarRubrikOchText {
+  position: absolute;
+  top: 107px;
+  left: 210px;
+  height: 100%;
 }} @media(min-width: 1200px) {#sangensDelarRubrikOchText {
   position: absolute;
   top: 107px;
@@ -770,7 +775,9 @@ z-index:0;
   color: #656565;
   font-size: 16px;
   font-weight: 300;
-} @media (max-width: 1199px) {.sangensDelarText {
+} @media (max-width: 1099px) {.sangensDelarText {
+  width: 50%;
+}} @media (max-width: 1023px) {.sangensDelarText {
   width: 100%;
 }}
 
@@ -923,7 +930,11 @@ z-index:0;
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  #sangensDelarBildContainer {
+      width:38%
+  }
+}
 
   .nav>li>a {
     padding-bottom:46px;
