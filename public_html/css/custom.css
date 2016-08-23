@@ -212,7 +212,7 @@ body {
 }
 
 #square_and_text_left {
-  margin-right:100%;
+  margin-right:auto;;
 }
 
 #square_and_text_center {
@@ -351,6 +351,8 @@ body {
 #saker {
     background: url('../img/säker.png') no-repeat center center;
     background-size:cover;
+    margin: auto;
+    margin-top: 50px;
 }
 
 #flexibel {
@@ -364,7 +366,8 @@ body {
 #bekvam {
     background: url('../img/bekväm.png') no-repeat center center;
     background-size:cover;
-
+    margin: auto;
+    margin-top: 50px;
 }
 
 #custom_navbar {
@@ -814,19 +817,57 @@ z-index:0;
   }
 }
 
+@media(max-width: 1023px) {
+  #las_mer_start {
+    margin-left:0px
+  }
+  #bestall_start {
+    margin-right:0px;
+  }
+  #prisbild1, #prisbild2, #prisbild3, #prisbild4 {
+      margin:auto;
+      margin-bottom:50px;
+      margin-top: 0px !important;
+  }
+  #prisbild4 {
+      margin-top: 40px !important;
+  }
+  #sesam1_hr, #sesam2_hr, #sesam3_hr, #sesam4_hr, #sesam5_hr, #sesam6_hr, #sesam7_hr, #sesam8_hr {
+      width: 100% !important;
+  }
+  .pris_bild {
+      width: 350px !important;
+      height: 350px !important;
+  }
+  #laslampa {
+      margin-top: 0px !important;
+  }
+  #leverans {
+      margin-top: 0px !important;
+  }
+  #om_oss_jumbo {
+      margin-bottom: 20px !important;
+  }
+  .green_header {
+      margin-top:40px !important;
+  }
+
+}
+
 @media(max-width: 767px) {
   #circle_picture {
     width: 0px;
     height:0px;
   }
   .boll {
-      margin:auto;
+      margin:0;
       margin-top: 50px;
   }
 
   #jumboCarousel {
       margin-bottom:0px;
   }
+
   #las_mer_start {
     margin-left:0px
   }
@@ -854,6 +895,7 @@ z-index:0;
   #leverans {
       margin-top: 0px !important;
   }
+
   #circle_picture_om_oss1 {
       height: 0px !important;
       width: 0px !important;
@@ -863,11 +905,8 @@ z-index:0;
       height: 300px !important;
       margin:auto;
   }
-  #om_oss_jumbo {
-      margin-bottom: 20px !important;
-  }
-  .green_header {
-      margin-top:40px !important;
+  #square_and_text_right {
+    float: none;
   }
 }
 
@@ -888,8 +927,12 @@ z-index:0;
   }
 
   .boll {
-      margin:auto;
+      margin:0;
       margin-top: 50px;
+  }
+
+  #square_and_text_left {
+    margin-right: 100%;
   }
 }
 
@@ -908,6 +951,7 @@ z-index:0;
   #sangensDelarBildContainer {
       width:0;
   }
+
   #circle_picture {
       height: 480px;
       width: 480px;
@@ -918,8 +962,12 @@ z-index:0;
   }
 
   .boll {
-      margin:0;
+      margin:auto;
       margin-top: 50px;
+  }
+
+  #square_and_text_left {
+    margin-right: auto;
   }
 
 }
