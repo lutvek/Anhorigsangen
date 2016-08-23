@@ -127,7 +127,15 @@ body {
   font-weight: 300;
 }
 
-.nav>li>a.v-link-active
+.navbar_item_link:hover {
+  color: #33618c;
+  background-color: #ffffff  !important;
+  -webkit-box-shadow:inset 0px -3px 0px 0px #33618c;
+  -moz-box-shadow:inset 0px -3px 0px 0px #33618c;
+  box-shadow:inset 0px -3px 0px 0px #33618c;
+}
+
+.navbar_item_link.v-link-active
 {
   color: #33618c;
   background-color: #ffffff;
@@ -136,8 +144,8 @@ body {
   box-shadow:inset 0px -3px 0px 0px #33618c;
 }
 
-.nav>li>a:visited,
-.nav>li>a:focus{
+.navbar_item_link:visited,
+.nav>li>a:focus {
   outline:none;
   background-color: #ffffff;
   border: none;
