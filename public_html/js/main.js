@@ -133,6 +133,8 @@ $.ajax({
 								var App = Vue.extend({});
 
 								router.start(App, 'body');
+
+
 							}
 						});
 					}

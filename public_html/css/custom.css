@@ -127,6 +127,10 @@ body {
   font-weight: 300;
 }
 
+.navbar_item.dropdown {
+  display: none;
+}
+
 .navbar_item_link:hover {
   color: #33618c;
   background-color: #ffffff  !important;
@@ -863,6 +867,15 @@ z-index:0;
 }
 
 @media(max-width: 767px) {
+
+  .navbar_item.normal {
+    display: none;
+  }
+
+  .navbar_item.dropdown {
+    display: list-item;
+  }
+
   #circle_picture {
     width: 0px;
     height:0px;
