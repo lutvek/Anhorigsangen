@@ -436,53 +436,63 @@ body {
   padding: 0;
   margin-bottom: 0;
 } @media(min-width: 768px) {#omSesam1stRow {
-  height: 420px;
-
+  height: 500px;
 }} @media(min-width: 992px) {#omSesam1stRow {
   height: 700px;
+}} @media(min-width: 1920px) {#omSesam1stRow {
+  height: 750px;
 }}
 
 #OmSesamMenyAndTextColumn {
-
 } @media(min-width: 768px) {#OmSesamMenyAndTextColumn {
-height: 420px;
+height: 500px;
 position: relative;
 z-index: 0;
 }} @media(min-width: 992px) {#OmSesamMenyAndTextColumn {
 height: 700px;
 position:relative;
 z-index:0;
+}} @media(min-width: 1920px) {#OmSesamMenyAndTextColumn {
+height: 750px;
 }}
 
 #omSesamText {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
   color: white;
   font-size: 16px;
   font-weight: 300;
 } @media(min-width: 768px) {#omSesamText {
   width: 45%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 70px;
   color: white;
   font-size: 16px;
   font-weight: 300;
 }} @media(min-width: 992px) {#omSesamText {
-  width: 45%;
+  width: 32%;
   padding-top: 100px;
-  padding-right: 100px;
   color: white;
   font-size: 16px;
   font-weight: 300;
 }} @media(min-width: 1200px) {#omSesamText {
-  width: 40%;
+  width: 28%;
   padding-top: 100px;
-  padding-right: 100px;
   color: white;
   font-size: 16px;
   font-weight: 300;
+}} @media(min-width: 1600px) {#omSesamText {
+  width: 28%;
+  padding-top: 100px;
+  color: white;
+  font-weight: 300;
+}} @media(min-width: 1920px) {#omSesamText {
+  width: 30%;
+  padding-top: 100px;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
 }}
+
 
 #omSesamMenyKnappgrupp {
   width: 100%;
@@ -490,32 +500,33 @@ z-index:0;
   bottom: 0;
 } @media(max-width: 767px) {#omSesamMenyKnappgrupp {
   position: static;
+  margin-top: 20px;
 }}
 
 .omSesamMenyKnapp {
   height: 64px;
   border-top: 1px solid #23517c;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 } @media(max-width: 767px){ .omSesamMenyKnapp {
   width: 100%;
 }} @media(min-width: 768px){ @media(max-width: 991px) {.omSesamMenyKnapp {
-  display: inline-block;
-  width: 32%;
-  border-top: none;
+  float: left;
+  width: 33%;
+  width: 33.33%;
   text-align: center;
+  border-right: 1px solid #23517c;
+} #omSesamMenyKnappSista {
+  border-right: 0;
 }}} @media(min-width: 992px) {.omSesamMenyKnapp {
-  border-top: 1px solid #285178;
   color: white;
-  font-size: 16px;
   font-weight: 400;
-  border-top: 1px solid #285178;
   margin-left: -5000px;
   padding-left: 5000px;
 }} .omSesamMenyKnapp:hover {
-  background-color: rgb(40,81,120);
-  background-color: rgba(40,81,120, 0.6);
+  background-color: rgb(35,81,124);
+  background-color: rgba(35,81,124, 0.6);
   cursor: pointer;
 }
 
@@ -524,10 +535,11 @@ z-index:0;
 }
 
 .omSesamMenyKnapptext {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
-#omSesamCarouselColumn {
+#omSesamCarouselIndicators {
+  display: none;
 }
 
 #omSesamCarousel {
@@ -536,38 +548,48 @@ z-index:0;
   z-index:1;
   padding: 0;
 } @media(min-width: 768px) {#omSesamCarousel {
+  margin-top: 100px;
   width: 50%;
-  height: 356px;
+  height: 300px;
 }} @media(min-width: 992px) {#omSesamCarousel {
-  width: 60%;
+  margin-top: 0;
+  width: 62%;
   height: 700px;
   border-left: 10px solid white;
 }} @media(min-width: 1200px) {#omSesamCarousel {
-  width: 63%;
-  height: 700px;
-  border-left: 10px solid white;
-}} @media(min-width: 1500px) {#omSesamCarousel {
-  width: 59%;
-  height: 700px;
-  border-left: 10px solid white;
+  width: 65%;
+}} @media(min-width: 1600px) {#omSesamCarousel {
+  width: 62%;
+}} @media(min-width: 1920px) {#omSesamCarousel {
+  height: 750px;
+  width: 60%;
 }} @media(min-width: 2100px) {#omSesamCarousel {
+  height: 750px;
+  width: 58%;
+}} @media(min-width: 2700px) {#omSesamCarousel {
   width: 55%;
-  height: 700px;
-  border-left: 10px solid white;
+}} @media(min-width: 4000px) {#omSesamCarousel {
+  width: 50%;
 }}
+
+#omSesamCarousel:hover #omSesamCarouselIndicators {
+  display: block;
+}
 
 .omSesamCarouselSlide {
   height: 0px;
   width: 100%;
 } @media(min-width: 768px) {.omSesamCarouselSlide {
   float: right;
-  height: 356px;
-  border-radius: 5px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }} @media(min-width: 992px) {.omSesamCarouselSlide {
-  float: right;
   height: 700px;
   z-index:1;
   border-radius: 0;
+}} @media(min-width: 1920px) {.omSesamCarouselSlide {
+  height: 750px;
 }}
 
 #omSesamCarouselSlide1 {
@@ -596,7 +618,8 @@ z-index:0;
 }
 
 #omSesam2ndRow {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #anvandning_text {
@@ -628,11 +651,12 @@ z-index:0;
 }}
 
 #omSesamBGjumbo2 {
-  margin-top: 125px;
   background-color: #fafafa;
   padding: 0;
-} @media(min-width: 1023px) {#omSesamBGjumbo2 {
-  height: 850px;
+  height: 750px;
+  margin: 0 !important;
+} @media(min-width: 1024px) {#omSesamBGjumbo2 {
+  height: 900px;
 }}
 
 #sangensDelarBildContainer {
@@ -680,11 +704,27 @@ z-index:0;
 }}
 
 #sangensDelarUpp {
+  position: absolute;
+  top:0;
+  left:0;
   font-size: 12px;
   font-weight: 300;
   color: #33618c;
-  margin-top: 0;
 } #sangensDelarUpp:hover {
+  text-decoration: none;
+  cursor: pointer;
+} @media(max-width: 1023px) {#sangensDelarUpp {
+  display: none;
+}}
+
+#tekniskSpecUpp {
+  position: absolute;
+  top:-100px;
+  left:0;
+  font-size: 12px;
+  font-weight: 300;
+  color: #33618c;
+} #tekniskSpecUpp:hover {
   text-decoration: none;
   cursor: pointer;
 } @media(max-width: 1023px) {#sangensDelarUpp {
@@ -739,13 +779,13 @@ z-index:0;
   float: right;
   padding-left: 35%;
   padding-right: 5%;
-  padding-bottom: 107px;
+  padding-bottom: 100px;
   width: 100%;
 }} @media(max-width: 767px) {#sangensDelarRubrikOchText {
   float: right;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 107px;
+  padding-bottom: 50px;
   width: 100%;
 }} @media(min-width: 1024px) {#sangensDelarRubrikOchText {
   position: absolute;
@@ -813,7 +853,7 @@ z-index:0;
 }
 
 #tekniskSpecContainer {
-    margin-top: 110px;
+    padding-top: 100px;
 }
 
 @media(max-width: 1199px) {

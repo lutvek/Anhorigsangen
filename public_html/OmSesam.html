@@ -1,8 +1,6 @@
 <!-- Sida: Anhörigsängen Sesam -->
 <div id="omsesam">
-
   <div id="omSesam1stRow" class="jumbotron">
-
     <div id="omSesamCarouselColumn">
       <div id="omSesamCarousel" class="carousel fade" data-ride="carousel">
         <!-- Indicators -->
@@ -43,7 +41,6 @@
         </div>
       </div>
     </div>
-
     <div class="container">
       <div id="OmSesamMenyAndTextColumn">
         <div id="omSesamText">
@@ -57,16 +54,14 @@
           <div class="omSesamMenyKnapp" v-on:click="scrollTo('#omSesam2ndRow')">
             <div class="omSesamMenyKnapptext">
               Användning
-
             </div>
           </div>
           <div class="omSesamMenyKnapp" v-on:click="scrollTo('#omSesamBGjumbo2')">
             <div class="omSesamMenyKnapptext">
               Sängens Delar
-
             </div>
           </div>
-          <div class="omSesamMenyKnapp" v-on:click="scrollTo('#tekniskSpecContainer')">
+          <div id="omSesamMenyKnappSista" class="omSesamMenyKnapp" v-on:click="scrollTo('#tekniskSpecContainer')">
             <div class="omSesamMenyKnapptext">
               Teknisk Specifikation
             </div>
@@ -75,7 +70,6 @@
       </div>
     </div>
   </div>
-
   <div class="container">
     <div id="omSesam2ndRow" class="row">
       <div class="col-md-6">
@@ -94,10 +88,7 @@
       </div>
     </div>
   </div>
-
-
   <div id="omSesamBGjumbo2" class="jumbotron"> <!-- Bakgrund Rad 3 -->
-
     <div id="sangensDelarBildContainer"> <!-- innehåll: bilder -->
       <div v-show="visaDel == 'hjulen'" transition="fadeIn" id="hjul" class="sangensDelarBild"></div>
       <div v-show="visaDel == 'madrassen'" transition="fadeIn" id="madrass" class="sangensDelarBild"></div>
@@ -105,13 +96,9 @@
       <div v-show="visaDel == 'stommen'" transition="fadeIn" id="stomme" class="sangensDelarBild"></div>
       <div v-show="visaDel == 'bottnen'" transition="fadeIn" id="botten" class="sangensDelarBild"></div>
     </div>
-
     <div class="container">
-
       <div id="sangensDelarMenyOchText">
-
         <div id="sangensDelarUpp" v-on:click="scrollTo('body')">&#8743 &nbsp  Tillbaka Upp</div>
-
         <div id="sangensDelarMenyKnappgrupp">
           <div class="sangensDelarMenyKnapp">
             <a v-on:click="setData('hjulen')" v-bind:class="{'aktiv': (nextDel == 'hjulen')}">Om Hjulen</a>
@@ -129,7 +116,6 @@
             <a v-on:click="setData('bottnen')" v-bind:class="{'aktiv': (nextDel == 'bottnen')}">Om Sängbotten</a>
           </div>
         </div>
-
         <div id="sangensDelarRubrikOchText">
           <div id="sangensDelarRubrik">
             <div id="sangensDelarRubrikStatisk">Sängens Delar</div>
@@ -138,7 +124,6 @@
             <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarRubrikVal">Mekanismen</div>
             <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarRubrikVal">Stommen</div>
             <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarRubrikVal">Botten</div>
-
             <div class="dropdown" id="sangensDelarDropdown">
               <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarDropVal">Hjulen</span>
@@ -166,7 +151,6 @@
               </div>
             </div>
           </div>
-
           <div v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarText">
             Skåpet har fyra stycken länkhjul med dubbla svängkranslager och förzinkade byglar med uppfylld hygienklass för sjukhusmiljö. Hjulen har en ljusgrå fälg och grå hjulbana av termoplastisktgummi med en hårdhet på 70 shore för att förhindra märken på golv. Samtliga hjul är kapslade med trådskydd och de hjul som är placerade mot skåpets öppna sida är försedda med fotbroms. Skåpet står mycket stabilt på de länkhjul vi har valt att använda.
             <br><br>
@@ -198,10 +182,11 @@
       </div>
     </div>
   </div>
-
   <div id="tekniskSpecContainer" class="container">
+
     <div class="row">
       <div class="col-md-8">
+        <div id="tekniskSpecUpp" v-on:click="scrollTo('body')">&#8743 &nbsp  Tillbaka Upp</div>
         <h2 class="sesam_g1303">
           Teknisk Specifikation
         </h2>
@@ -608,5 +593,4 @@
       </div>
     </div>
   </div>
-
 </div>

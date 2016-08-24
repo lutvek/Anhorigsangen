@@ -1,7 +1,10 @@
-var HemTemplate = '';
-var OmSesamTemplate = '';
-var PriserTemplate = '';
-var KontaktTemplate = '';
+var HemTemplate = "";
+
+var OmSesamTemplate = "";
+
+var PriserTemplate = "";
+
+var KontakTemplate = "";
 
 var currentPath;
 var elementRefHolder;
@@ -108,11 +111,8 @@ $.ajax({
 								});
 
 								router.beforeEach(function (transition) {
-									if(transition.to.path === '/') { window.scrollTo(0, 0); }
-									if(transition.to.path === '/sesam') { window.scrollTo(0, 0); }
-									if(transition.to.path === '/priser') { window.scrollTo(0, 0); }
-									if(transition.to.path === '/kontakt') { window.scrollTo(0, 0); }
-								  transition.next()
+									window.scrollTo(0, 0);
+								  transition.next();
 								})
 
 								router.map({
@@ -133,8 +133,6 @@ $.ajax({
 								var App = Vue.extend({});
 
 								router.start(App, 'body');
-
-
 							}
 						});
 					}
