@@ -655,7 +655,9 @@ height: 750px;
   padding: 0;
   height: 750px;
   margin: 0 !important;
-} @media(min-width: 1024px) {#omSesamBGjumbo2 {
+} @media(max-width: 767px) {#omSesamBGjumbo2 {
+  height: auto;
+}}@media(min-width: 1024px) {#omSesamBGjumbo2 {
   height: 900px;
 }}
 
@@ -720,10 +722,11 @@ height: 750px;
 #tekniskSpecUpp {
   position: absolute;
   top:-100px;
-  left:0;
+  left:15px;
   font-size: 12px;
   font-weight: 300;
   color: #33618c;
+  z-index: 100;
 } #tekniskSpecUpp:hover {
   text-decoration: none;
   cursor: pointer;
