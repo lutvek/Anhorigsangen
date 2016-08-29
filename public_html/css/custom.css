@@ -715,9 +715,7 @@ height: 750px;
 } #sangensDelarUpp:hover {
   text-decoration: none;
   cursor: pointer;
-} @media(max-width: 1023px) {#sangensDelarUpp {
-  display: none;
-}}
+}
 
 #tekniskSpecUpp {
   position: absolute;
@@ -730,9 +728,7 @@ height: 750px;
 } #tekniskSpecUpp:hover {
   text-decoration: none;
   cursor: pointer;
-} @media(max-width: 1023px) {#sangensDelarUpp {
-  display: none;
-}}
+}
 
 #sangensDelarMenyKnappgrupp {
   position: absolute;

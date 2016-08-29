@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 2016-aug-15, 15:08:53
     Author     : Ludvig
 */
@@ -11,7 +11,7 @@ and open the template in the editor.
     font-weight: 300;
     color: #ffffff;
     font-size: 30px;
-    margin-bottom:20px; 
+    margin-bottom:20px;
 }
 
 #generos {
@@ -20,7 +20,7 @@ and open the template in the editor.
 
 .priser_garanti {
     font-size: 16px !important;
-    color: white;   
+    color: white;
     font-weight: 300;
 }
 
@@ -81,7 +81,7 @@ and open the template in the editor.
     margin-left: 0;
     text-align: left;
     border-color: #33618c;
-    margin-bottom:70px;
+    margin-bottom: 30px;
 }
 
 #sesam8_hr {
@@ -117,7 +117,7 @@ and open the template in the editor.
     color: #33618c;
     font-size: 24px;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 #laslampa {
@@ -275,4 +275,8 @@ and open the template in the editor.
 #exempel_bestallning {
     border: 1px solid #ffffff;
     padding: 60px;
+} @media(max-width: 767px) {
+  #exempel_bestallning {
+      padding: 5px;
+  }
 }
