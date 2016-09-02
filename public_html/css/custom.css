@@ -361,14 +361,14 @@ body {
 }
 
 #saker {
-    background: url('../img/säker.png') no-repeat center center;
+    background: url('../img/säker.jpg') no-repeat center center;
     background-size:cover;
     margin: auto;
     margin-top: 50px;
 }
 
 #flexibel {
-    background: url('../img/flexibel.png') no-repeat center center;
+    background: url('../img/flexibel.jpg') no-repeat center center;
     margin:auto;
     margin-top: 50px;
     background-size:cover;
@@ -376,7 +376,7 @@ body {
 }
 
 #bekvam {
-    background: url('../img/bekväm.png') no-repeat center center;
+    background: url('../img/bekväm.jpg') no-repeat center center;
     background-size:cover;
     margin: auto;
     margin-top: 50px;
