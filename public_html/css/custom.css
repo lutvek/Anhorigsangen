@@ -47,11 +47,11 @@ body {
 
 #logo_background {
     position: absolute;
-    top:5%;
+    top:0;
     right:0;
     left:63%;
     bottom:0;
-    height:533px;
+    height: 100%;
     opacity: 0.4;
 }
 
