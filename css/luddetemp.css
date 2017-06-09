@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+Created on : 2016-aug-15, 15:08:53
+Author     : Ludvig
+*/
+#produkter_rubrik1 {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom:20px;
+}
+
+#generos {
+  margin-bottom: 16px;
+}
+
+.produkter_garanti {
+  font-size: 16px !important;
+  color: white;
+  font-weight: 300;
+}
+
+.garanti_bold {
+  font-weight: 400;
+  color: #fffff;
+  display: inline;
+}
+
+.garanti_light {
+  display: inline;
+}
+
+#sesam1_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 340px;
+}
+
+#sesam2_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 590px;
+}
+
+#sesam3_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 250px;
+}
+
+#sesam4_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 250px;
+}
+
+#sesam5_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 250px;
+}
+
+#sesam6_hr {
+  border-color: #ffffff;
+  margin-left: 0;
+  text-align: left;
+  width: 250px;
+}
+
+#sesam7_hr {
+  width: 290px;
+  margin-left: 0;
+  text-align: left;
+  border-color: #33618c;
+  margin-bottom: 30px;
+}
+
+#sesam8_hr {
+  width: 310px;
+  margin-left: 0;
+  text-align: left;
+  border-color: #33618c;
+}
+
+#sesam9_hr {
+  width: 310px;
+  margin-left: 0;
+  text-align: left;
+  border-color: #9dc180;
+}
+
+#sesam10_hr {
+  width: 310px;
+  margin-left: 0;
+  text-align: left;
+  border-color: #33618c;
+}
+
+#sesam11_hr {
+  width: 250px;
+  margin-left: 0;
+  text-align: left;
+  border-color: #33618c;
+}
+
+#sesam12_hr {
+  border-color: #33618c;
+  margin-left: 0;
+  text-align: left;
+  width: 150px;
+}
+
+.sesam_g1303 {
+  display:inline;
+  color: #33618c;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#laslampa {
+  margin-top: 90px;
+}
+#bestallning_rubrik {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hr_produkterlista {
+  border-color: #414141;
+}
+
+.produkterlista_produkter {
+  display: inline;
+  float: right;
+}
+
+.produkter_text {
+  display:inline;
+  font-size: 16px;
+  font-weight:300;
+}
+
+.produkter_text_bold {
+  font-weight: 500;
+}
+
+.produkter_text_blue {
+  color: #33618c;
+  font-size:18px;
+}
+
+.produkter_text_stor {
+  font-size: 18px;
+}
+.produkter_st {
+  margin-top:30px;
+}
+.produkter_text_produkter {
+  font-size: 22px;
+  color: #33618c;
+  font-weight: 600;
+}
+
+.produkter_text_rubrik {
+  font-size: 24px;
+  font-weight: 500;
+  color: #33618c;
+}
+.produkter_per_st {
+  margin-top: 40px;
+}
+
+.bestallning_text {
+  display:inline;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 16px;
+}
+.bestallning_text_bold {
+  font-weight: 500;
+}
+
+.order_button {
+  border: 1px solid #33618c;
+  color: #33618c;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 22px 110px 22px 110px;
+  margin-top:15px;
+  margin-bottom: 80px;
+}
+
+.order_button_white {
+  background-color: #ffffff;
+}
+
+#order_button_gray {
+  background-color: #fafafa;
+}
+
+
+
+.produkter_bild {
+
+  height: 480px;
+  width: 480px;
+  margin-left: auto;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+
+#produkterbild1 {
+  background: url('../img/hela_sangen.jpg') no-repeat center center;
+  margin-top:50px;
+  background-size: 149%;
+  background-position: 50% 78%;
+}
+
+#produkterbild2 {
+  background: url('../img/stomme.jpg') no-repeat center center;
+  margin-top:50px;
+  background-size: 149%;
+  background-position: 50% 78%;
+}
+
+#produkterbild3 {
+  background: url('../img/lampa.jpg') no-repeat center center;
+  margin-bottom: 80px;
+  background-size: 180%;
+  background-position: 76% 87%;
+}
+
+#produkterbild4 {
+  background: url('../img/kartong.jpg') no-repeat center center;
+  margin-bottom: 80px;
+  background-size: 126%;
+  background-position: 76% 87%;
+}
+
+.gray_jumbo {
+  background-color: #fafafa;
+  padding-top: 90px;
+  padding-bottom: 0px;
+  margin-bottom:90px;
+}
+
+#produkter_jumbotron {
+  position:relative;
+  overflow:hidden;
+  background-color: #33618c;
+  background-image: url('../img/produkter_top.jpg');
+  background-size: cover;
+  padding-bottom:105px;
+  padding-top:68px;
+  margin-bottom: 90px;
+}
+
+#leverans {
+  margin-top: 110px;
+}
+
+#bestallning_jumbo {
+  background-color: #33618c;
+  padding-top: 90px;
+  padding-bottom:80px;
+  margin-bottom:90px;
+}
+
+#exempel_bestallning {
+  border: 1px solid #ffffff;
+  padding: 60px;
+  } @media(max-width: 767px) {
+    #exempel_bestallning {
+      padding: 5px;
+    }
+  }
