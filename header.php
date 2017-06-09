@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/luddetemp.css">
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
+  <script type="text/javascript">window.location.replace('indexvue.html');</script>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script src="js/vendor/vue.js"></script>
   <script src="js/vendor/vue-router.min.js"></script>

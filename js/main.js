@@ -141,6 +141,10 @@ function start() {
 		}
 	});
 
+	router.redirect({
+  	'/indexvue.html': '/'
+	});
+
 	var App = Vue.extend({});
 
 	router.start(App, 'body');
