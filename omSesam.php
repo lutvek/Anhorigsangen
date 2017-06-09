@@ -100,97 +100,73 @@
     </div>
   </div>
   <a name="sangensdelar"></a>
-  <div id="omSesamBGjumbo2" class="jumbotron"> <!-- Bakgrund Rad 3 -->
+  <div id="omSesamBGjumbo2PHP" class="jumbotron"> <!-- Bakgrund Rad 3 -->
     <div id="sangensDelarBildContainer"> <!-- innehåll: bilder -->
-      <div v-show="visaDel == 'hjulen'" transition="fadeIn" id="hjul" class="sangensDelarBild"></div>
-      <div v-show="visaDel == 'madrassen'" transition="fadeIn" id="madrass" class="sangensDelarBild"></div>
-      <div v-show="visaDel == 'mekaniken'" transition="fadeIn" id="mekanism" class="sangensDelarBild"></div>
-      <div v-show="visaDel == 'stommen'" transition="fadeIn" id="stomme" class="sangensDelarBild"></div>
-      <div v-show="visaDel == 'bottnen'" transition="fadeIn" id="botten" class="sangensDelarBild"></div>
+      <div v-show="visaDel == 'stommen'" transition="fadeIn" id="stommePHP" class="sangensDelarBildPHP"></div>
+      <div v-show="visaDel == 'bottnen'" transition="fadeIn" id="bottenPHP" class="sangensDelarBildPHP"></div>
+      <div v-show="visaDel == 'hjulen'" transition="fadeIn" id="hjulPHP" class="sangensDelarBildPHP"></div>
+      <div v-show="visaDel == 'madrassen'" transition="fadeIn" id="madrassPHP" class="sangensDelarBildPHP"></div>
+      <div v-show="visaDel == 'mekaniken'" transition="fadeIn" id="mekanismPHP" class="sangensDelarBildPHP"></div>
     </div>
     <div class="container">
-      <div id="sangensDelarMenyOchText">
+      <div id="sangensDelarMenyOchTextPHP">
+
         <a href=#><div id="sangensDelarUpp">&#8743 &nbsp  Tillbaka Upp</div></a>
-        <div id="sangensDelarMenyKnappgrupp">
-          <div class="sangensDelarMenyKnapp">
-            <a v-on:click="setData('stommen')" v-bind:class="{'aktiv': (nextDel == 'stommen')}">Om Skåpstommen</a>
-          </div>
-          <div class="sangensDelarMenyKnapp">
-            <a v-on:click="setData('bottnen')" v-bind:class="{'aktiv': (nextDel == 'bottnen')}">Om Sängbotten</a>
-          </div>
-		  <div class="sangensDelarMenyKnapp">
-            <a v-on:click="setData('mekaniken')" v-bind:class="{'aktiv': (nextDel == 'mekaniken')}">Om Mekanismen</a>
-          </div>
-          <div class="sangensDelarMenyKnapp">
-            <a v-on:click="setData('hjulen')" v-bind:class="{'aktiv': (nextDel == 'hjulen')}">Om Hjulen</a>
-          </div>
-          <div class="sangensDelarMenyKnapp">
-            <a v-on:click="setData('madrassen')" v-bind:class="{'aktiv': (nextDel == 'madrassen')}">Om Madrassen</a>
-          </div>
-        </div>
-        <div id="sangensDelarRubrikOchText">
+        <div id="sangensDelarRubrikOchTextPHP">
           <div id="sangensDelarRubrik">
-            <div id="sangensDelarRubrikStatisk">Sängens Delar</div>
-            <div v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarRubrikVal">Hjulen</div>
-            <div v-show="visaDel == 'madrassen'" transition="fadeIn" class="sangensDelarRubrikVal">Madrassen</div>
-            <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarRubrikVal">Mekanismen</div>
-            <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarRubrikVal">Stommen</div>
-            <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarRubrikVal">Botten</div>
-            <div class="dropdown" id="sangensDelarDropdown">
-              <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarDropVal">Hjulen</span>
-                <div v-show="visaDel == 'madrassen'" transition="fadeIn" class="sangensDelarDropVal">Madrassen</div>
-                <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarDropVal">Mekanismen</div>
-                <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarDropVal">Stommen</div>
-                <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarDropVal">Botten</div>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('hjulen')" v-bind:class="{'aktiv': (nextDel == 'hjulen')}">Om Hjulen</a>
-                </div>
-                <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('madrassen')" v-bind:class="{'aktiv': (nextDel == 'madrassen')}">Om Madrassen</a>
-                </div>
-                <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('mekaniken')" v-bind:class="{'aktiv': (nextDel == 'mekaniken')}">Om Mekanismen</a>
-                </div>
-                <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('stommen')" v-bind:class="{'aktiv': (nextDel == 'stommen')}">Om Skåpstommen</a>
-                </div>
-                <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('bottnen')" v-bind:class="{'aktiv': (nextDel == 'bottnen')}">Om Sängbotten</a>
-                </div>
-              </div>
+            <div style="width: 50%; color: #1f7294; font-size: 24px; font-weight:300; margin-top:40px;">
+              Sängens Delar
+              <hr id="sesam11_hr">
             </div>
           </div>
-          <div v-show="visaDel == 'hjulen'" transition="fadeIn" class="sangensDelarText">
+          <div id ="skapstommenTextPHP" class="sangensDelarTextPHP">
+            <div style="width: 50%; color: #1f7294; font-size: 18px; font-weight:300">
+              Skåpstommen
+            </div>
+            <br>
+            Skåpstommen är producerad av en 19mm tjock MDF stomme där alla delar är högtryckslaminerade med Formica högtryckslaminat F6463SHE NCS S 0500-N. Laminatet håller hög kvalitet och är Byggvarubedömt i Sverige, registrerat i BASTA-registret för utfasningen av farliga kemiska ämnen och har Svanens Miljömärkningslicens. Laminatet är även CE-märkt och stödjer kemikalielagstiftningen. Reach och Formicas produkter innehåller inga av de högriskämnen som är listade av den europeiska kemikalieinspektionen. För att göra skåpet mer stöttåligt har kanterna försetts med PVC-fria ABS-lister.
+            <br><br>
+            MDF-skivan som är fuktresistent, produceras av Medite Europe LTD och har varumärksnamnet Medite Industrial MR. Skivan har Nordisk ECO Svanen-märkt licens, förhåller sig till lågnivåvärden för formaldehyd enligt CARB phase 2 och är således en helt giftfri möbelkomponent med extremt låga emissionsvärden. Medite Europe LTD följer krav och riktlinjer för att tillverka sina produkter genom återvinning av bland annat träflis för sin produktion istället för att fälla skog i enligthet med FSC Forest Chain of Custody systems klassificeringar. Medite Europe LTD är även certificierade av BM TRADA.
+          </div>
+          <div id = "sangbottenTextPHP" class="sangensDelarTextPHP">
+            <div style="width: 50%; color: #1f7294; font-size: 18px; font-weight:300">
+              Sängbotten
+            </div>
+            <br>
+            Sängbotten består av rostfri polerad stålplåt, AISI 304, formgiven efter mekanismens rör och konstruktion. Botten är uppdelad i tre sektioner där varje sektion är formad efter rörramen vilket förstärker konstruktionen, ökar stabiliteten i de rörliga delarna samt utesluter att skruvande kraft uppstår på gångjärn och genomgående axlar för vikfunktionen.
+            <br><br>
+            Plåtarna hänger på rörramen och är fastskruvade med rostfri välvd torxskruv. Madrassen ligger stabilt förankrad i de nedsänkta plåtarna som är förstärkta med dubbelbockad kant mellan rörramens huvud och fotände. Madrassen rör sig därmed inte i bädden vilket alltid är uppskattat hos användaren.
+          </div>
+          <div id="hjulenTextPHP" class="sangensDelarTextPHP">
+            <div style="width: 50%; color: #1f7294; font-size: 18px; font-weight:300">
+              Hjulen
+            </div>
+            <br>
             Skåpet har fyra stycken länkhjul med dubbla svängkranslager och förzinkade byglar med uppfylld hygienklass för sjukhusmiljö. Hjulen har en ljusgrå fälg och grå hjulbana av termoplastisktgummi med en hårdhet på 70 shore för att förhindra märken på golv. Samtliga hjul är kapslade med trådskydd och de hjul som är placerade mot skåpets öppna sida är försedda med fotbroms. Skåpet står mycket stabilt på de länkhjul vi har valt att använda.
             <br><br>
             En ny typ av fot på benbågarna har framtagits som inte ger märken på golv när skåpet efterjusteras. Hjulen har egenskaper som kan klara ojämnheter i golv och övergångar och de rullar tyst, mjukt och följsamt. Hjulen behöver inte vara låsta när skåpet fälls ut och används, det är endast vid momentet att fälla in skåpet som behovet att låsa det främre hjulparet skulle kunna uppstå.
             <br><br>
             Hjulen tål 80 grader varmt vatten och tål att spritas med 45% Isopropanol-lösning. Hjulen uppfyller hygien krav nivå 2 för vårdmiljö.
           </div>
-          <div v-show="visaDel == 'madrassen'" transition="fadeIn" class="sangensDelarText">
+          <div id = "madrassenTextPHP" class="sangensDelarTextPHP">
+            <div style="width: 50%; color: #1f7294; font-size: 18px; font-weight:300">
+              Madrassen
+            </div>
+            <br>
             Madrassen är 12cm hög, helsvetsad och uppfyller hygienkrav nivå 2. Madrassens kärna är tillverkad i kallskum av typen CME (Combustion Modified Elastic Polyeter) med öppna celler för att säkerställa brandsäkerhet och komfort. Kallskumskärnan produceras av Rectiel på ett miljövänligt sätt helt utan halogenerade flamskyddsmedel (CFC-fri) och är både fysiskt och kemiskt återvinningsbar. Benämningen som ”Flexible Foam”, FR Foam EN-597 uppfyller högsta brandklass standard enligt test metod BS 5852 Crib 5.
             <br><br>
             Madrassöverdraget/PU-omslaget är 100% antibakteriellt i enlighet med JIS Z 2801 "ingen tillväxt" och enligt SN 195920. PU-Omslagets märke är Techmaflex IPA FRC (T151) eller (T174) och blå i färgen.Tyget är permanent elastiskt mot veckbildning och tål 70% alkoholkoncentration men kan också rengöras med klorlösning (13 000 ppm). PU–omslaget är ånggenomsläpplig i båda riktningarna och madrassen klassas därför inte som duschbar men tål att rengöras med 95 grader hett vatten.
           </div>
-          <div v-show="visaDel == 'mekaniken'" transition="fadeIn" class="sangensDelarText">
+          <div id = "mekanismenTextPHP" class="sangensDelarTextPHP">
+            <div style="width: 50%; color: #1f7294; font-size: 18px; font-weight:300">
+              Mekanismen
+            </div>
+            <br>
             Mekanismen till Sesam anhörigsäng är utvecklad från Sedaflex 12M, vilken är utvecklad för att uppfylla testnorm EN-1725 och har testats enligt norm DD ENV 13759:2001 enligt Rapport TSSF35115, daterad 10 september 2010 för rörliga sammansatta delar av metallrör och platta metallkomponenter utan anmärkningar. Sedaflex 12M har också genomgått mer långtgående tester, bland annat FIRA Test Method For Contract Beds enligt TEST (Bs EN 1725:1998) och TEST (BS 7397:1991). Ett ytterligare säkerhetstest för sängar och madrasser har Sedaflex mekanismen prövats för enligt TEST BS EN 15373:2007. Rapporten för dessa tre tester är daterad 29 oktober 2010 med referens nr TSBDF35221 (Fira:s referensnummer).
             <br><br>
             Leverantören av mekanismens delar har 0% emissionsutsläpp till miljön från underarbete, lackering och utrustning. Täckfärgen är grå och hård där ytan har ett minimum av 80 micron på de lackerade ytorna av fällmekanismens rör- och stagdelar. Infästningen och formanpassningen av de rostfria plåtarna i sängbotten täcker större delen av mekanismens delar och håller hygienkrav nivå 2 även på mekanismens sinsemellan rörliga delar.
           </div>
-          <div v-show="visaDel == 'stommen'" transition="fadeIn" class="sangensDelarText">
-            Skåpstommen är producerad av en 19mm tjock MDF stomme där alla delar är högtryckslaminerade med Formica högtryckslaminat F6463SHE NCS S 0500-N. Laminatet håller hög kvalitet och är Byggvarubedömt i Sverige, registrerat i BASTA-registret för utfasningen av farliga kemiska ämnen och har Svanens Miljömärkningslicens. Laminatet är även CE-märkt och stödjer kemikalielagstiftningen. Reach och Formicas produkter innehåller inga av de högriskämnen som är listade av den europeiska kemikalieinspektionen. För att göra skåpet mer stöttåligt har kanterna försetts med PVC-fria ABS-lister.
-            <br><br>
-            MDF-skivan som är fuktresistent, produceras av Medite Europe LTD och har varumärksnamnet Medite Industrial MR. Skivan har Nordisk ECO Svanen-märkt licens, förhåller sig till lågnivåvärden för formaldehyd enligt CARB phase 2 och är således en helt giftfri möbelkomponent med extremt låga emissionsvärden. Medite Europe LTD följer krav och riktlinjer för att tillverka sina produkter genom återvinning av bland annat träflis för sin produktion istället för att fälla skog i enligthet med FSC Forest Chain of Custody systems klassificeringar. Medite Europe LTD är även certificierade av BM TRADA.
-          </div>
-          <div v-show="visaDel == 'bottnen'" transition="fadeIn" class="sangensDelarText">
-            Sängbotten består av rostfri polerad stålplåt, AISI 304, formgiven efter mekanismens rör och konstruktion. Botten är uppdelad i tre sektioner där varje sektion är formad efter rörramen vilket förstärker konstruktionen, ökar stabiliteten i de rörliga delarna samt utesluter att skruvande kraft uppstår på gångjärn och genomgående axlar för vikfunktionen.
-            <br><br>
-            Plåtarna hänger på rörramen och är fastskruvade med rostfri välvd torxskruv. Madrassen ligger stabilt förankrad i de nedsänkta plåtarna som är förstärkta med dubbelbockad kant mellan rörramens huvud och fotände. Madrassen rör sig därmed inte i bädden vilket alltid är uppskattat hos användaren.
-          </div>
-        </diV>
+        </div>
       </div>
     </div>
   </div>

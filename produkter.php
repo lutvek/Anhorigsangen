@@ -114,7 +114,7 @@
             </div>
           </div> -->
           <br><br>
-          <button class="order_button order_button_white" @click="scrollTo('#bestallning_jumbo')">Beställ</button>
+          <a href="#bestallLink"><button class="order_button order_button_white">Beställ</button><a href="#bestallLink">
         </div>
       </div>
       <div class="col-md-6">
@@ -242,7 +242,7 @@
             </div>
           </div> -->
           <br><br>
-          <button class="order_button order_button_white" @click="scrollTo('#bestallning_jumbo')">Beställ</button>
+          <a href="#bestallLink"><button class="order_button order_button_white">Beställ</button></a>
         </div>
       </div>
       <div class="col-md-6">
@@ -349,7 +349,7 @@
           <br>
           <hr class="hr_produkterlista">
           <br><br>
-          <button id="order_button_gray" class="order_button" @click="scrollTo('#bestallning_jumbo')">Beställ</button>
+          <a href="#bestallLink"><button id="order_button_gray" class="order_button">Beställ</button></a>
         </div>
       </div>
     </div>
@@ -379,6 +379,7 @@
       </div>
     </div>
   </div>
+  <a name="bestallLink"></a>
   <div id="bestallning_jumbo" class="jumbotron">
     <div class="container">
       <div class ="row">

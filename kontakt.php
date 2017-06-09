@@ -10,9 +10,9 @@
                 </div>
             </div>
             <div class ="col-md-5">
-                <button id="kontakta_oss_button" v-on:click="scrollTo('#kontaktInfoContainer')">
+                <a href="#kontaktLink"><button id="kontakta_oss_button">
                     Kontakta Oss
-                </button>
+                </button></a>
             </div>
         </div>
     </div>
@@ -59,6 +59,7 @@
     </div>
     </div>
 </div>
+<a name="kontaktLink"></a>
 <div id="kontaktInfoContainer" class="container">
     <div class="row">
         <div class="col-md-5">
