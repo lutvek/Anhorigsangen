@@ -139,7 +139,7 @@ body {
   box-shadow:inset 0px -3px 0px 0px #33618c;
 }
 
-.navbar_item_link.v-link-active
+.navbar_item_link.active
 {
   color: #33618c;
   background-color: #ffffff;
@@ -690,23 +690,23 @@ height: 750px;
 .sangensDelarBildPHP {
   height: 500px;
 }
-#hjul {
+#hjulenbild {
     background: url('../img/hjul.jpg') no-repeat center center;
     background-size:cover;
 }
-#madrass {
+#madrassenbild {
     background: url('../img/madrass.jpg') no-repeat center center;
     background-size:cover;
 }
-#mekanism {
+#mekanismenbild {
     background: url('../img/mekanism.jpg') no-repeat center center;
     background-size:cover;
 }
-#stomme {
+#stommenbild {
     background: url('../img/skåp.jpg') no-repeat center center;
     background-size:cover;
 }
-#botten{
+#bottenbild {
     background: url('../img/botten.jpg') no-repeat center center;
     background-size:cover;
 }
@@ -822,7 +822,7 @@ height: 750px;
 .sangensDelarMenyKnapp>a {
   color: #33618c;
   font-weight: 300;
-} .sangensDelarMenyKnapp>a:hover, .sangensDelarMenyKnapp>a.aktiv {
+} .sangensDelarMenyKnapp>a:hover, .sangensDelarMenyKnapp>a.active {
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;

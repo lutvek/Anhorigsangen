@@ -1,4 +1,3 @@
-
   <?php include 'header.php';?>
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -86,8 +85,8 @@
             Anhörigsängen Sesam är framtagen för att uppfylla Nya Karolinska Solna sjukhus och Stockholms läns landstings krav på en hygienisk,
             patientsäker och hållbar anhörigsäng till patient rum inom länets sjukhus.
   		  <br><br>
-  		  Ladda ner <a style="font-weight: 600; color: #337ab7;" href="./pdf/anhorigsangen_med_engelska.pdf">produktblad</a> som pdf eller
-            <a id="las_mer" href="omSesam.php">läs mer</a>
+  		  Ladda ner vårt <a style="font-weight: 600; color: #337ab7;" href="./pdf/anhorigsangen_med_engelska.pdf">produktblad som pdf</a> eller
+            <a id="las_mer" href="sesam.php">läs mer</a>
 
             <!--<ul>
               <li>Produkten uppfyller de högt ställda kraven på material, hållbarhet, hygien och patientsäkerhet.</li><br>
@@ -152,7 +151,7 @@
       <div id="button_row" class="row hidden-sm hidden-xs">
           <div class="col-md-6 center_col">
               <!--<button id="las_mer_start" class="order_button order_button_white" href="omSesam.php">Läs mer</button>-->
-              <a id="las_mer_start"  href="omSesam.php" class="order_button order_button_white">Läs mer</a>
+              <a id="las_mer_start"  href="sesam.php" class="order_button order_button_white">Läs mer</a>
           </div>
           <div class="col-md-6 center_col">
               <a id="bestall_start" class="order_button order_button_white" href="produkter.php">Beställ</a>

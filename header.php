@@ -21,10 +21,7 @@
   <link rel="stylesheet" href="css/luddetemp.css">
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript">window.location.replace('indexvue.html');</script>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="js/vendor/vue.js"></script>
-  <script src="js/vendor/vue-router.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!--
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
@@ -47,40 +44,40 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index.php" style="outline: none;">
+        <a href="/" style="outline: none;">
           <img src="img/logo.png" id="logo_navbar">
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul id ="navbar_items" class="nav navbar-nav navbar-right">
           <li class="navbar_item normal">
-            <a class="navbar_item_link" href="index.php">
+            <a id='navhem' class="navbar_item_link" href="/">
               Hem
             </a>
           </li>
           <li class="navbar_item normal">
-            <a class="navbar_item_link" href="omSesam.php">
+            <a id='navsesam' class="navbar_item_link" href="sesam.php">
               Anhörigsängen Sesam
             </a>
           </li>
           <li class="navbar_item normal">
-            <a class="navbar_item_link" href="produkter.php">
+            <a id='navprodukter' class="navbar_item_link" href="produkter.php">
               Produkter &amp; Beställning
             </a>
           </li>
           <li class="navbar_item normal">
-            <a class="navbar_item_link" href="kontakt.php">
+            <a id='navkontakt' class="navbar_item_link" href="kontakt.php">
               Om oss
             </a>
           </li>
 
           <li class="navbar_item dropdown">
-            <a class="navbar_item_link" data-toggle="collapse" data-target=".navbar-collapse.collapse" href="index.php">
+            <a class="navbar_item_link" data-toggle="collapse" data-target=".navbar-collapse.collapse" href="/">
               Hem
             </a>
           </li>
           <li class="navbar_item dropdown">
-            <a class="navbar_item_link" data-toggle="collapse" data-target=".navbar-collapse" href="omSesam.php">
+            <a class="navbar_item_link" data-toggle="collapse" data-target=".navbar-collapse" href="sesam.php">
               Anhörigsängen Sesam
             </a>
           </li>

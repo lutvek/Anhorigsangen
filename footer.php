@@ -5,7 +5,22 @@
     </footer>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <!-- Navbar active button -->
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        var location = window.location.href;
+        if(location.indexOf('sesam') != -1) {
+          $('#navsesam').addClass("active");
+        } else if(location.indexOf('produkter') != -1) {
+          $('#navprodukter').addClass("active");
+        } else if (location.indexOf('kontakt') != -1) {
+          $('#navkontakt').addClass("active");
+        } else {
+          $('#navhem').addClass("active");
+        }
+      });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
