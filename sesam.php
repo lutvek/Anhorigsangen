@@ -211,27 +211,27 @@
             <div id='bottenrubrik' class="sangensDelarRubrikVal" style="display: none;">Botten</div>
             <div class="dropdown" id="sangensDelarDropdown">
               <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span v-show="visaDel == 'hjulen'" class="sangensDelarDropVal">Hjulen</span>
-                <div v-show="visaDel == 'madrassen'" class="sangensDelarDropVal">Madrassen</div>
-                <div v-show="visaDel == 'mekaniken'" class="sangensDelarDropVal">Mekanismen</div>
-                <div v-show="visaDel == 'stommen'" class="sangensDelarDropVal">Stommen</div>
-                <div v-show="visaDel == 'bottnen'" class="sangensDelarDropVal">Botten</div>
+                <div id='hjulendrop' class="sangensDelarDropVal" style="display: none;">Hjulen</div>
+                <div id='madrassendrop' class="sangensDelarDropVal" style="display: none;">Madrassen</div>
+                <div id='mekanismendrop' class="sangensDelarDropVal" style="display: none;">Mekanismen</div>
+                <div id='stommendrop' class="sangensDelarDropVal">Stommen</div>
+                <div id='bottendrop' class="sangensDelarDropVal" style="display: none;">Botten</div>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('hjulen')" v-bind:class="{'aktiv': (nextDel == 'hjulen')}">Om Hjulen</a>
+                  <a onClick="setData('hjulen', 'small')">Om Hjulen</a>
                 </div>
                 <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('madrassen')" v-bind:class="{'aktiv': (nextDel == 'madrassen')}">Om Madrassen</a>
+                  <a onClick="setData('madrassen', 'small')">Om Madrassen</a>
                 </div>
                 <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('mekaniken')" v-bind:class="{'aktiv': (nextDel == 'mekaniken')}">Om Mekanismen</a>
+                  <a onClick="setData('mekanismen', 'small')">Om Mekanismen</a>
                 </div>
                 <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('stommen')" v-bind:class="{'aktiv': (nextDel == 'stommen')}">Om Skåpstommen</a>
+                  <a onClick="setData('stommen', 'small')">Om Skåpstommen</a>
                 </div>
                 <div class="sangensDelarMenyKnapp">
-                  <a v-on:click="setData('bottnen')" v-bind:class="{'aktiv': (nextDel == 'bottnen')}">Om Sängbotten</a>
+                  <a onClick="setData('botten', 'small')">Om Sängbotten</a>
                 </div>
               </div>
             </div>
@@ -668,20 +668,22 @@
 <script type='text/javascript'>
   var visaDel = 'stommen';
 
-  function setData(string) {
-    if(visaDel == string) return;
+  function setData(del, winSize) {
+    if(visaDel == del) return;
     $('#' + visaDel + 'bild').fadeOut();
     $('#' + visaDel + 'text').fadeOut();
     $('#' + visaDel + 'rubrik').fadeOut();
     $('#' + visaDel + 'knapp').removeClass('active');
-    visaDel = string;
+    if(winSize == 'small') $('#' + visaDel + 'drop').fadeOut();
+    visaDel = del;
     $('#' + visaDel + 'knapp').addClass('active');
 
     setTimeout(function() {
       $('#' + visaDel + 'bild').fadeIn();
       $('#' + visaDel + 'text').fadeIn();
-      $('#' + visaDel + 'rubrik').fadeIn();
-    }, 400)
+      if(winSize != 'small') $('#' + visaDel + 'rubrik').fadeIn();
+      if(winSize == 'small') $('#' + visaDel + 'drop').fadeIn();
+    }, 405)
   };
 
   $(document).ready(function() {
