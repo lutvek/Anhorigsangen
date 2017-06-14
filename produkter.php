@@ -114,7 +114,7 @@
             </div>
           </div> -->
           <br><br>
-          <a href="#bestallLink"><button class="order_button order_button_white">Beställ</button><a href="#bestallLink">
+          <a href="#bestallLink"><button class="order_button order_button_white">Beställ</button></a>
         </div>
       </div>
       <div class="col-md-6">
@@ -197,7 +197,7 @@
               </div>
             </div> -->
             <br><br>
-            <button id="order_button_gray" class="order_button" @click="scrollTo('#bestallning_jumbo')">Beställ</button>
+            <a href="#bestallLink"><button id="order_button_gray" class="order_button">Beställ</button></a>
           </div>
         </div>
         <div class="col-md-6">
